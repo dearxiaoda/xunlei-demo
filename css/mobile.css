@@ -1,0 +1,851 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2,
+h3,
+h4{
+    font-weight: normal;
+}
+i{
+    font-style: normal;
+}
+b{
+    font-weight: normal;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #ffffff;
+}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+/*-----------------兼容低版本--------------*/
+.clearfix{
+    zoom: 1;
+}
+/*-------------------版心----------------------------------------------*/
+.w{
+    margin: 0 auto;
+    width: 1024px;
+}
+/*-------------------------uper背景图片---------------------*/
+/*——————————————————————————————第一张图开始-----------------------------*/
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/mobile/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*-------------定位版心-------------------------------*/
+.xian-banner{
+    height: 620px;
+    position: relative;
+    top: 0;
+
+}
+/*-----------------logo---------------------------------------*/
+.xian-icon{
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    background: url("../imgs/mobile/m-logo.png") no-repeat;
+}
+/*-------------------------------android iphone 图标---------------------*/
+.xian-sort{
+    height: 60px;
+    width: 400px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+.xian-robot{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #2ca0f2;
+    color: #2ca0f2;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.xian-sort .icon-anzhuoxiazai{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-smalliphone{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.xian-sort .icon-mobile{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-smalliphone:hover{
+    color: #2ca0f2;
+
+}
+.xian-bigiphone{
+    float: left;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.xian-sort .icon-shouji{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-bigiphone:hover{
+    color: #2ca0f2;
+
+}
+/*<!---------------- 迅雷广告文字------------------------------------------->*/
+
+.xian-word{
+    width: 395px;
+    height: 333px;
+    position: absolute;
+    top: 184px;
+    left: 0px;
+}
+.xian-word p{
+    text-align: left;
+
+}
+.xian-word .xian-xunlei{
+    font-size: 48px;
+    color: #fff;
+
+}
+.xian-word .xian-55{
+    display: inline-block;
+    width: 64px;
+    height: 22px;
+    background-color: #469cdd;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+    font-size: 16px;
+    vertical-align: 30%;
+}
+.xian-new{
+    width: 187px;
+    height: 40px;
+    background-color: #a6a8b3;
+    color: #1f2128;
+    font-size: 23px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 40px;
+    margin-top:10px;
+}
+.xian-word .xian-ad{
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: left;
+}
+.xian-pic{
+    width: 395px;
+    height: 119px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+    display: block;
+}
+.xian-load{
+    width: 251px;
+    height: 117px;
+    float: left;
+}
+
+.xian-QRcode{
+    width: 109px;
+    height: 109px;
+    background: url("../imgs/mobile/mad-qrcode.png") ;
+    background-size: 109px 109px;
+    float: right;
+}
+
+.xian-bigQRcode{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url("../imgs/mobile/mad-qrcode.png") ;
+    left: 400px;
+    top:-80px;
+    z-index: 1;
+}
+.xian-edition {
+    clear: both;
+    color: #c0c3c7;
+    font-size: 12px;
+    text-align: left;
+
+
+}
+.xian-edition a {
+    height: 30px;
+    width: 120px;
+    color: #c0c3c7;
+    margin-left: 33px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+.xian-edition a:hover{
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+
+}
+.xian-edition a i{
+    font-size: 12px;
+}
+
+/*---------------------背景图右边手机--------------------------------------*/
+.xian-iphone{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 140px;
+    right: 50px;
+    /*background: url("../imgs/mobile/m-anright.png") no-repeat;*/
+}
+
+
+
+/*——————————————————————————————第一张图结束-----------------------------*/
+
+/*——————————————————————————————第二张图开始-----------------------------*/
+
+
+.bg1{
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/mobile/m-bgs2.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*-------------定位版心-------------------------------*/
+.xian-banner1 {
+    height: 620px;
+    position: relative;
+    top: 0;
+    display: none;
+
+}
+/*-----------------logo---------------------------------------*/
+.xian-icon1 {
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    background: url("../imgs/mobile/m-logo.png") no-repeat;
+}
+/*-------------------------------android iphone 图标---------------------*/
+.xian-sort1{
+    height: 60px;
+    width: 400px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+.xian-robot1{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.xian-robot1:hover{
+    color: #2ca0f2;
+
+}
+.xian-sort1 .icon-anzhuoxiazai{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-smalliphone1{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+    border-bottom: 2px solid #2ca0f2;
+    color: #2ca0f2;
+    text-align: center;
+
+
+}
+.xian-sort1 .icon-mobile{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-smalliphone1:hover{
+    color: #2ca0f2;
+
+}
+.xian-bigiphone1{
+    float: left;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.xian-sort1 .icon-shouji{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-bigiphone1:hover{
+    color: #2ca0f2;
+
+}
+/*<!---------------- 迅雷广告文字------------------------------------------->*/
+
+.xian-word1{
+    width: 395px;
+    height: 333px;
+    position: absolute;
+    top: 184px;
+    left: 0px;
+}
+.xian-word1 p{
+    text-align: left;
+
+}
+.xian-word1 .xian-xunlei1{
+    font-size: 48px;
+    color: dimgray;
+
+}
+.xian-word1 .xian-23{
+    display: inline-block;
+    width: 55px;
+    height: 22px;
+    background-color:#999999;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    font-size: 16px;
+    vertical-align: 75%;
+}
+
+.xian-word1 .xian-ad1{
+    color: dimgray;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+
+}
+.xian-pic1{
+    width: 395px;
+    height: 119px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+    display: block;
+}
+.xian-load1{
+    width: 251px;
+    height: 117px;
+    float: left;
+}
+.xian-QRcode1{
+    width: 109px;
+    height: 109px;
+    background: url("../imgs/mobile/miph-qrcode.png") ;
+    background-size: 109px 109px;
+    float: right;
+}
+.xian-bigQRcode1{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url("../imgs/mobile/mad-qrcode.png") ;
+    left: 400px;
+    top:-80px;
+    z-index: 1;
+}
+.xian-edition1 {
+    clear: both;
+    color: #c0c3c7;
+    font-size: 12px;
+    text-align: left;
+
+
+}
+.xian-onloadnow{
+    /*height: 200px;*/
+    /*width: 200px;*/
+    position: absolute;
+    right: 30px;
+    top:100px;
+    /*background-color: red;*/
+}
+
+
+/*——————————————————————————————第二张图结束-----------------------------*/
+
+/*——————————————————————————————第三张图开始-----------------------------*/
+
+.bg2{
+    width: 100%;
+    height: 100%;
+    background: url("../imgs/mobile/m-bgs3.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+/*-------------定位版心-------------------------------*/
+.xian-banner2{
+    height: 620px;
+    position: relative;
+    top: 0;
+    display: none;
+
+
+}
+/*-----------------logo---------------------------------------*/
+.xian-icon2{
+    width: 180px;
+    height: 80px;
+    position: absolute;
+    top: 5px;
+    background: url("../imgs/mobile/m-logo.png") no-repeat;
+}
+/*-------------------------------android iphone 图标---------------------*/
+.xian-sort2{
+    height: 60px;
+    width: 410px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+.xian-robot2{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 40px;
+}
+.xian-robot2:hover{
+    color: #2ca0f2;
+
+}
+.xian-sort2 .icon-anzhuoxiazai{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-smalliphone2{
+    float: left;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+.xian-sort2 .icon-mobile{
+    margin-right: 5px;
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-smalliphone2:hover{
+    color: #2ca0f2;
+
+}
+.xian-bigiphone2{
+    float: left;
+    width: 70px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    border-bottom: 2px solid #2ca0f2;
+    color: #2ca0f2;
+
+}
+.xian-sort2 .icon-shouji{
+    /*margin-right: 5px;*/
+    font-size: 30px;
+    font-weight: normal;
+
+}
+.xian-bigiphone2:hover{
+    color: #2ca0f2;
+
+}
+/*<!---------------- 迅雷广告文字------------------------------------------->*/
+
+.xian-word2{
+    width: 395px;
+    height: 333px;
+    position: absolute;
+    top: 184px;
+    left: 0px;
+}
+.xian-word2 .xian-xunlei2{
+    font-size: 48px;
+    color: #fff;
+
+}
+.xian-word2 p{
+    text-align: left;
+
+}
+.xian-word2 .xian-52{
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+    background-color: dimgray;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    vertical-align: 60%;
+    line-height: 22px;
+}
+
+.xian-word2 .xian-ad2{
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: left;
+
+}
+.xian-pic2{
+    width: 395px;
+    height: 119px;
+    margin-top: 14px;
+    margin-bottom: 16px;
+    display: block;
+}
+.xian-load2{
+    width: 251px;
+    height: 117px;
+    float: left;
+}
+.xian-QRcode2{
+    width: 109px;
+    height: 109px;
+    background: url("../imgs/mobile/mad-qrcode.png") ;
+    background-size: 109px 109px;
+    float: right;
+}
+.xian-bigQRcode2{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: url("../imgs/mobile/mad-qrcode.png") ;
+    left: 400px;
+    top:-80px;
+    z-index: 1;
+}
+.xian-edition2 {
+    clear: both;
+    color: #c0c3c7;
+    font-size: 12px;
+    text-align: left;
+
+}
+.xian-edition2 a {
+    height: 30px;
+    width: 120px;
+    color: #c0c3c7;
+    margin-left: 33px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+.xian-edition2 a:hover{
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+}
+.xian-edition2 a i{
+    font-size: 12px;
+}
+
+/*---------------------背景图右边手机--------------------------------------*/
+.xian-iphone2{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 105px;
+    right: 80px;
+    /*text-align: left;*/
+    line-height: 400px;
+    background: url("../imgs/mobile/blue.jpg") no-repeat;
+    background-size: 400px 515px;
+}
+.xian-iphone2 i {
+    color: deeppink;
+    font-size: 30px;
+    display: block;
+    margin-top: 40px;
+    font-style: italic;
+
+
+
+}
+.xian-iphone22{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    right: 60px;
+    /*background-color: palegoldenrod;*/
+    border-radius: 50%;
+    line-height: 400px;
+
+    /*background: url("../imgs/mobile/m-ipright.png") no-repeat;*/
+}
+.xian-iphone22 i {
+    color: #ffffff;
+    font-size:30px;
+    display: block;
+    margin-top: 60px;
+
+
+}
+
+/*——————————————————————————————第三张图结束-----------------------------*/
+/*<!------------第二部分轮播图 开始-------------------------->*/
+
+.all {
+    width: 514px;
+    height: 360px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.screen {
+    width: 500px;
+    height: 345px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen li {
+    width: 500px;
+    height: 345px;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 3000px;
+}
+
+
+/*<!------------第二部分轮播图 结束-------------------------->*/
+
+/*<!---------------四个图标广告------------------------------------->*/
+
+.xian-appAd{
+    height: 304px;
+    background-color: #fff;
+    overflow: hidden;
+
+}
+.xian-appAd .xian-appPic{
+    height: 224px;
+    margin-top: 40px;
+    overflow: hidden;
+    clear: both;
+
+}
+.xian-appPic li {
+    float: left;
+    width: 254px;
+    height: 224px;
+    border-right: 1px dotted #a6a6a6;
+    text-align: center;
+
+}
+
+.xian-appPic li:last-child{
+    border: none;
+}
+.xian-appPic li:first-child{
+    border-left: 1px solid #ffffff;
+}
+.xian-meiyan .icon-02{
+    position: relative;
+    width: 150px;
+    height: 110px;
+    font-size: 100px;
+    display: block;
+    margin: 0 auto;
+    color: pink;
+}
+.xian-meiyan .icon-02 .icon-mofabang{
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    left: 35%;
+    top: 30%;
+
+}
+.xian-bigWord {
+    font-size: 28px;
+    line-height: 28px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+.xian-appPic b{
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666666;
+}
+.xian-zhibo .icon-02 {
+    width: 150px;
+    height: 110px;
+    display: block;
+    font-size: 100px;
+    margin: 0 auto;
+    color: purple;
+    position: relative;
+}
+.xian-zhibo .icon-video1{
+    position: absolute;
+    font-size: 42px;
+    color: #ffffff;
+    left: 37%;
+    top: 26%;
+
+
+}
+.xian-paishe .icon-02 {
+    position: relative;
+    width: 150px;
+    height: 110px;
+    display: block;
+    font-size: 100px;
+    margin: 0 auto;
+    color: #2ca0f2;
+}
+.xian-paishe .icon-xiangji{
+    position: absolute;
+    font-size: 42px;
+    color: #ffffff;
+    left: 36%;
+    top: 20%;
+
+}
+.xian-texiao .icon-02 {
+    width: 150px;
+    height: 110px;
+    display: block;
+    font-size: 100px;
+    margin: 0 auto;
+    color: greenyellow;
+    position: relative;
+}
+.xian-texiao .icon-mofabang1{
+    position: absolute;
+    font-size: 42px;
+    color: #ffffff;
+    left: 36%;
+    top: 23%;
+
+}
+
+.icon-mofabang,
+.icon-xiangji,
+.icon-video1,
+.icon-mofabang1 {
+animation: load 2s infinite;
+animation-duration: 2s;
+}
+@keyframes load {
+
+0%{
+transform: translateZ(0px);
+}
+
+50%{
+transform: translateZ(1500px)  scale(1.4,1.4);
+
+}
+
+100% {
+transform: translateZ(0px)   scale(1.4,1.4);
+;
+
+}
+}
+
+/*----------------底部-------------*/
+.xian-foot{
+    height: 80px;
+    background-color: #f8f8f8;
+    clear: both;
+    padding-top: 14px;
+}
+
+.xian-foot p {
+    color: #bdbdbd;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+}
+.xian-foot p:first-child{
+    margin-bottom: 13px;
+
+}
+
+.xian-foot p a {
+    color:#bdbdbd;
+    font-size: 14px;
+
+
+}

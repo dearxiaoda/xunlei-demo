@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+    border: 0 none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong {
+    font-weight: normal;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.w {
+    width: 1024px;
+    margin: 0 auto;
+}
+/*#next {*/
+/*width: 100%;*/
+/*height: 620px;*/
+    /*top: 0px;*/
+
+/*background-color: red;*/
+/*position: absolute;*/
+/*}*/
+/*#over {*/
+/*width: 100%;*/
+/*height: 620px;*/
+/*background-color: blue;*/
+    /*top: 0px;*/
+/*position: absolute;*/
+/*}*/
+.big {
+    position: relative;
+}
+#m-main {
+    width: 100%;
+    height: 620px;
+    background: url("../imgs/mobile/m-bgs3.jpg") no-repeat;
+    background-size: cover;
+    /*position: absolute;*/
+    display: none;
+}
+#m-main.reveal {
+    display: block;
+}
+
+
+.m-banner {
+    height: 620px;
+    position: relative;
+    /*background-color: red;*/
+}
+
+.m-banner .m-logo {
+    width: 170px;
+    height: 78px;
+    float: left;
+}
+
+#m-edition {
+    height: 65px;
+    float: right;
+    position: absolute;
+    right: 162px;
+    z-index: 1;
+}
+#m-edition a {
+    float: left;
+}
+#m-edition .m-ipd {
+    border-bottom: 2px solid deepskyblue;
+}
+
+#m-android {
+    margin-right: 53px;
+
+}
+
+#m-ipa {
+    margin-right: 38px;
+}
+#m-ipd {
+
+}
+.m-banner .m-down {
+    position: absolute;
+    width: 398px;
+    height: 350px;
+    top: 192px;
+    left: 0;
+
+}
+.m-banner .m-down .xunlei {
+    font-size: 46px;
+    color: #fff;
+}
+.m-down .xunlei span {
+    font-size: 14px;
+    width: 60px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    text-align: center;
+    background-color: #3f99dc;
+    border-radius: 10px;
+}
+.m-down p.update {
+    width: 182px;
+    height: 36px;
+    color: #000;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #a1a4b0;border-radius: 5px;
+}
+.m-down p.specialty,
+.m-down p.specialty-1 {
+    font-size: 18px;
+    color: #ffffff;
+}
+.m-down p.download {
+    margin-top: 15px;
+}
+
+.m-down p.download a {
+    float: left;
+}
+.m-down p.download img.qr {
+    float: right;
+    box-shadow: 3px 3px 1px #000;
+}
+.m-down p.text {
+    float: left;
+    font-size: 14px;
+    color: #c0c3c7;
+
+}
+.m-down p.text b {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.m-down p.text span {
+    margin-left: 20px;
+    display: inline-block;
+    height: 33px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+
+}
+.m-down p.text span:hover {
+    background-color: #000;
+    border-radius: 10px;
+}
+.m-banner .m-anright {
+    position: absolute;
+    top: 104px;
+    right: 0px;
+}
+.m-video ul {
+    float: left;
+}
+.m-video ul li {
+    float: left;
+    width: 255px;
+    height: 263px;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+.m-video ul li img {
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.m-video ul li p.title {
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.m-video ul li p.one,
+.m-video ul li p.two {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    text-align: center;
+}
+.m-video ul li:last-child {
+    border-right: none;
+}
+.m-footer {
+    height: 74px;
+    padding-top: 20px;
+    background-color: #f8f8f8;
+}
+.m-footer p.chaining {
+    text-align: center;
+}
+.m-footer p.chaining a {
+    color: #bdbdbd;
+    font-size: 15px;
+}
+.m-footer p.chaining i {
+    color: #bdbdbd;
+}
+.m-footer p.over {
+    color: #bdbdbd;
+    text-align: center;
+    margin-top: 12px;
+}

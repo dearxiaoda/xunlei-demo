@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="iconfont/iconfont.css"/>
+    <script src="js/jquery-1.12.2.min.js"></script>
+    <script src = 'js/jquery.color.js'></script>
+
+</head>
+<body>
+<!--1、页面头部的开始-->
+<div class="header">
+    <!-- 迅雷logo-->
+    <h1>
+        <a href="index.html"></a>
+    </h1>
+    <!-- 音频实现-->
+    <!--<audio src="media/index/Beyond%20-%20谁伴我闯荡.mp3" autoplay="autoplay"  loop="loop"></audio>-->
+    <!--<audio src="media/index/Beyond%20-%20喜欢你.mp3" autoplay="autoplay"  loop="loop"></audio>-->
+    <!--<audio src="media/index/Beyond%20-%20谁伴我闯荡.mp3" controls="controls" autoplay="autoplay"  loop="loop"></audio>-->
+
+    <div class="nav" id="more-list">
+        <a class="nav-list" href="javascript:void(0)">
+            <i class="iconfont icon-icon-more"></i>
+            <span>更多</span>
+        </a>
+
+        <div class="more-nav" id="more-nav">
+            <!-- 页面 列表   li*5>a[#]   -->
+            <ul>
+                <li><a href="xunlei9.html">迅雷9</a></li>
+                <li><a href="video.html">迅雷影音</a></li>
+                <li><a href="TheAccelerator-xunLei.html">迅雷加速器</a></li>
+                <li><a href="index-vip.html">迅雷会员</a></li>
+                <li><a href="mobile.html">迅雷APP下载</a></li>
+                <li><a href="xublei-app2/mobile.html">迅雷IOS下载</a></li>
+                <li><a href="product.html">迅雷产品中心</a></li>
+                <li><a href="youliao/youliao-wjb.html">有料</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<!-- 页面头部的结束-->
+
+<!--2、页面切换开始-->
+<div class="wrap" id="wrap">
+
+    <!-- 换屏按钮  -->
+    <div class="page_btns">
+        <ul>
+            <li id="cur" class="current"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <!--  意见反馈-->
+
+    <a href="javascript: void(0)" class="page-btn" id="page-btn">意见 <br/>反馈</a>
+
+    <!-- 反馈弹窗-->
+    <div class="feedback" id="feedback">
+        <div class="pop-feedback">
+            <div class="pop-txt">
+                <p>
+                    意见反馈
+                </p>
+            </div>
+
+            <div class="pop-content">
+                <!-- 使用文本框-->
+                <textarea name="" id="" placeholder="在这里描述您遇到的问题"></textarea>
+            </div>
+            <div class="pop_bot">
+                <a href="javascript:" class="submit">提交</a>
+            </div>
+            <i class="iconfont icon-cha" id="icon-cha"></i>
+        </div>
+        <!-- 反馈弹窗END-->
+
+    </div>
+    <!-- 反馈弹窗-->
+
+
+    <!-- 意见反馈成功 开始 -->
+    <div class="feedback-img">
+        <div class="success-box">
+            <i class="iconfont icon-yes-copy"></i>
+            <span>意见反馈成功</span>
+        </div>
+    </div>
+    <!-- 意见反馈成功 结束-->
+
+
+    <!-- 轮转页面的开始------------------>
+    <div class="page-wp">
+
+        <!-- 页面首页开始 1--------------->
+        <div class="page1 page-box">
+            <div class="cont-box">
+                <div class="big-box">
+                    <ul class="bg-img">
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- 媒体播放-->
+                <div class="media-box">
+                    <!-- object-fit CSS 属性指定替换元素的内容应
+                    该如何适应到其使用的高度和宽度确定的框-->
+                    <video autoplay loop src="media/index/page1-1.mp4" style="width= 100%; height=100%; object-fit: fill" ></video>
+                </div>
+            </div>
+
+            <div class="content">
+                <span>技术<i></i>共享<i></i>娱乐</span>
+            </div>
+
+            <!-- 下 箭头-->
+            <div class="next-page">
+                <i class="iconfont icon-xia">
+                </i>
+            </div>
+
+        </div>
+        <!-- 首页结束 1---------------->
+
+        <!-- 页面2 开始------------>
+        <div class="page2 page-box">
+            <!-- 子页面切换的开始  pageSon1 -->
+            <div class="img1 bg-img">
+                <div class="content">
+                    <p class="text-link">
+                        <a href="xunlei9.html">
+                            迅雷9
+                            <i class="iconfont icon-xiangyou"></i>
+                        </a>
+                    </p>
+
+                    <div class="text-slogan">
+
+                    </div>
+
+                    <a href="#" class="downloadBtn">
+                        立即下载
+                        <i class="round"></i>
+                    </a>
+
+                    <p class="great">
+                        <i class="iconfont icon-zan"></i>
+                        <span>5550060人赞过</span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="img2 bg-img ">
+                <div class="content">
+                    <p class="text-link">
+                        <a href="xunlei9.html">
+                            迅雷Mac
+                            <i class="iconfont icon-xiangyou"></i>
+                        </a>
+                    </p>
+                    <p class="text-slogan">
+
+                    </p>
+                    <a href="#" class="downloadBtn" >
+                        立即下载
+                        <i class="round"></i>
+                    </a>
+                    <p class="great">
+                        <i class="iconfont icon-zan"></i>
+                        <span>4077人赞过</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="img3 bg-img ">
+                <div class="content">
+                    <p class="text-link">
+                        <a href="mobile.html">
+                            迅雷Android
+                            <i class="iconfont icon-xiangyou"></i>
+                        </a>
+                    </p>
+                    <p class="text-slogan">
+
+                    </p>
+                    <a href="#" class="downloadBtn downloadBtn1" data-num="0" >
+                        立即下载
+                        <i class="round"></i>
+                    </a>
+                    <div class="qr">
+                        <p class="txt-code">
+                            迅雷Android下载
+                        </p>
+                        <p class="txt-tip">
+                            手机扫描直接安装
+                        </p>
+                        <div class="qr-img">
+
+                        </div>
+                    </div>
+                    <p class="great">
+                        <i class="iconfont icon-zan"></i>
+                        <span>4077人赞过</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="img4 bg-img ">
+                <div class="content">
+                    <p class="text-link">
+                        <a href="xublei-app2/mobile.html">
+                            迅雷iOS
+                            <i class="iconfont icon-xiangyou"></i>
+                        </a>
+                    </p>
+                    <p class="text-slogan">
+
+                    </p>
+                    <a href="#" class="downloadBtn downloadBtn1" data-num="1">
+                        立即下载
+                        <i class="round"></i>
+                    </a>
+                    <div class="qr">
+                        <p class="txt-code">
+                            迅雷iOS下载
+                        </p>
+                        <p class="txt-tip">
+                            手机扫描直接安装
+                        </p>
+                        <div class="qr-img">
+
+                        </div>
+                    </div>
+                    <p class="great">
+                        <i class="iconfont icon-zan"></i>
+                        <span>4077人赞过</span>
+                    </p>
+                </div>
+
+            </div>
+            <!-- 子页面切换的结束-->
+
+            <!-- 切换页面快捷图标的开始-->
+            <div class="btn-wp">
+                <div class="btn-box" >
+                    <ul>
+                        <li class="current"><i class="iconfont icon-windows"></i></li>
+                        <li><i class="iconfont icon-mac1"></i></li>
+                        <li><i class="iconfont icon-anzhuo"></i></li>
+                        <li><i class="iconfont icon-mac"></i></li>
+                    </ul>
+                    <span class="underline"></span>
+                </div>
+
+            </div>
+            <!-- 切换页面快捷图标的结束-->
+        </div>
+        <!-- 页面2 结束------------>
+
+     <!-- ------------------页面三------------------------------>
+            <!--//calss page-box-->
+        <!--//第三页开始-->
+        <div id="page3" class="page page-box">
+
+            <!-- 左边部分占宽66%  开始-->
+            <div id="p3-left">
+                <!--//左边上面迅雷影音 开始-->
+                <div class="p3-left-inner" id="p3-left-video">
+
+                    <!--//迅雷影音的hover开始-->
+                    <div class="hover" >
+                        <!--1-->
+                        <p class = "txt_link">
+                            <a href="shengdanjie/shengdanjie.html">
+                                <span>有惊喜哦哦哦哦哦</span>
+                                <i></i>
+                            </a>
+                        </p>
+                        <!--2-->
+                        <p class = "txt_good">
+                            <span>精彩视界,乐无止境</span>
+                        </p>
+                        <!-- 3-->
+                        <div class="txt_download">
+
+                            <a href="#">立即下载</a>
+                        </div>
+                        <!-- 4-->
+                        <p class="txt_zan">
+                            <a href="javascript:void (0)"></a>
+                            <span>6663</span>人赞过
+                        </p>
+                    </div>
+                    <!--//迅雷影音的hover结束-->
+
+                    <!-- 未移入显示区域开始-->
+                    <div class="hoverNoIcon">
+                        <div class="HNicon">
+                            <img src="imgs/index/product_logo%20(1).png" />
+                        </div>
+                        <p id="click"><span>帅哥，看这里呀呀呀</span><i class="iconfont icon-screen"></i></p>
+                    </div>
+                    <!-- 未移入显示区域开始-->
+
+                    <!--图片-->
+                    <img src="imgs/index/page3-1.jpg" class= "page-bg"/>;
+
+                </div>
+                <!--//左边上面迅雷影音结束 -->
+
+                <!-- 左下游戏盒子开始-->
+                <div class="p3-left-inner" id = "p3-left-game">
+
+
+                    <div class="hover" >
+                        <!--1-->
+                        <p class = "txt_link">
+                            <a href="TheAccelerator-xunLei.html">
+                                <span>迅雷加速器</span>
+                                <i></i>
+                            </a>
+                        </p>
+                        <!--2-->
+                        <p class = "txt_good">
+                            <span>汇聚全网火爆游戏的平台</span>
+                        </p>
+                        <!-- 3-->
+                        <div class="txt_download">
+
+                            <a href="#">立即下载</a>
+
+                        </div>
+                        <!-- 4-->
+                        <p class="txt_zan">
+                            <a href="javascript:void (0)"></a>
+                            <span>6632</span>人赞过
+                        </p>
+                    </div>
+
+
+                    <!-- 未移入显示区域开始-->
+                    <div class="hoverNoIcon">
+                        <div class="HNicon">
+                            <img src="imgs/index/product_logo%20(1).png" />
+                        </div>
+                        <p><span>迅雷游戏盒子</span><i class="iconfont icon-screen"></i></p>
+                    </div>
+                    <!-- 未移入显示区域开始-->
+
+                    <!-- img-->
+                    <img src="imgs/index/page3-2.jpg" class= "page-bg"/>;
+
+                </div>
+                <!-- 左下游戏盒子结束-->
+
+                <!-- 坐下迅雷加速器开始-->
+                <div class="p3-left-inner" id="p3-left-fast">
+
+                    <div class="hover" >
+                        <!--1-->
+                        <p class = "txt_link">
+                            <a href="product.html">
+                                <span>迅雷产品</span>
+                                <i></i>
+                            </a>
+                        </p>
+                        <!--2-->
+                        <p class = "txt_good">
+                            <span>集合迅雷下载技术，为游戏加速而生</span>
+                        </p>
+                        <!-- 3-->
+                        <div class="txt_download">
+
+                            <a href="#">立即下载</a>
+
+                        </div>
+                        <!-- 4-->
+                        <p class="txt_zan">
+                            <a href="javascript:void (0)"></a>
+                            <span>1048</span>人赞过
+                        </p>
+                    </div>
+
+                    <!-- 未移入显示区域开始-->
+                    <div class="hoverNoIcon">
+                        <div class="HNicon">
+                            <img src="imgs/index/product_logo%20(1).png" />
+                        </div>
+                        <p><span>迅雷产品</span><i class="iconfont ifcon-screen"></i></p>
+                    </div>
+                    <!-- 未移入显示区域开始-->
+
+                    <!-- img-->
+                    <img src="imgs/index/page3-3.jpg" class= "page-bg" />;
+                </div>
+                <!-- 坐下迅雷加速器结束-->
+            </div>
+            <!-- 左边部分占宽66%  结束-->
+
+            <!-- 右边部分开始-->
+            <div id="p3-right">
+
+                <!-- hover-->
+                <div class="hover">
+                    <p class = "txt_link">
+                        <a href="index-vip.html">
+                            <span>迅雷会员</span>
+                            <i></i>
+                        </a>
+                    </p>
+
+                    <p class ="txt_brief">
+                        迅雷快鸟宽带提速联合中国电信、中国联通致力于帮助用户解决宽带低、 网速慢、上网体验差问题，提升物理宽带实现全网加速
+                    </p>
+
+                    <!-- PC下载-->
+                    <div class="txt_download-pc">
+                        PC端下载
+                    </div>
+                    <!-- 移动端下载-->
+                    <div class="txt_download-mobile">
+                        移动端下载
+                    </div>
+                    <!-- 点赞-->
+                    <p class="txt_zan">
+                        <a href="javascript:void(0)"></a>
+                        <span>1178</span>人赞过
+                    </p>
+
+
+
+                </div>
+
+                <!-- 未移入显示区域开始-->
+                <div class="hoverNoIcon">
+                    <div class="HNicon">
+                        <img src="imgs/index/product_logo%20(1).png" />
+                    </div>
+                    <p><span>迅雷会员</span><i class="iconfont icotn-screen"></i><i class = "iconfont ticon-shouji"></i></p>
+                </div>
+                <!-- 未移入显示区域开始-->
+
+                <!--img背景-->
+                <img src="imgs/index/page3-4.jpg" class= "page-bg" />
+            </div>
+            <!-- 右边部分结束-->
+        </div>
+        <!--//第三页结束-->
+
+        <!-- 第四页开始-->
+        <div class="page page-box" id="page4">
+            <!-- 第四页左边开始-->
+            <div id="p4-left">
+
+                <!-- hover-->
+                <div class="hover">
+                    <p class = "txt_link">
+                        <a href="xublei-app2/mobile.html">
+                            <span>迅雷IOS</span>
+                            <i></i>
+                        </a>
+                    </p>
+
+                    <p class ="txt_brief">
+                        文件邮,不只是个邮箱
+                    </p>
+
+                    <!-- PC下载-->
+                    <div class="txt_download-pc">
+                        <a href="#">PC端下载</a>
+                    </div>
+                    <!-- 移动端下载-->
+                    <div class="txt_download-mobile">
+                        <a href="#">移动端下载</a>
+                    </div>
+                    <!-- 点赞-->
+                    <p class="txt_zan">
+                        <a href="javascript:void(0)"></a>
+                        <span>1178</span>人赞过
+                    </p>
+
+
+
+                </div>
+
+
+                <!-- 未移入显示区域开始-->
+                <div class="hoverNoIcon">
+                    <div class="HNicon">
+                        <img src="imgs/index/product_logo%20(1).png" />
+                    </div>
+                    <p><span>文件邮</span><i class="iconfont icon-screen"></i><i class = "iconfont icon-shouji"></i></p>
+                </div>
+                <!-- 未移入显示区域开始-->
+
+
+
+                <!--img背景-->
+
+                <img src="imgs/index/page4-1.png" class= "page-bg" />
+
+
+            </div>
+            <!-- 第四页左边结束-->
+
+            <!-- 第四页右边开始-->
+            <div id="p4-right">
+
+                <!-- 迅雷直播开始-->
+
+                <div class="p4-right-inner" id="p4-right-zhiBo">
+                    <!--//迅雷影音的hover开始-->
+                    <div class="hover" >
+                        <!--1-->
+                        <p class = "txt_link">
+                            <a href="video.html">
+                                <span>迅雷影音</span>
+                                <i></i>
+                            </a>
+                        </p>
+                        <!--2-->
+                        <p class = "txt_good">
+                            <span>最有料短视频直播平台</span>
+                        </p>
+                        <!-- 3-->
+                        <div class="txt_download">
+
+                            <a href="#">立即下载</a>
+
+                        </div>
+                        <!-- 4-->
+                        <p class="txt_zan">
+                            <a href="javascript:void (0)"></a>
+                            <span>1089</span>人赞过
+                        </p>
+                    </div>
+                    <!--//迅雷影音的hover结束-->
+
+
+                    <!-- 未移入显示区域开始-->
+                    <div class="hoverNoIcon">
+                        <div class="HNicon">
+                            <img src="imgs/index/product_logo%20(1).png" />
+                        </div>
+                        <p><span>迅雷直播</span><i class = "iconfont icon-shouji"></i></p>
+                    </div>
+                    <!-- 未移入显示区域开始-->
+
+
+
+                    <!--图片-->
+                    <img src="imgs/index/page4-2.jpg" class= "page-bg"  />;
+
+                </div>
+
+                <!-- 迅雷直播结束-->
+
+                <!-- 迅雷有料开始-->
+
+                <div class="p4-right-inner" id="p4-right-youLiao">
+                    <div class="hover" >
+                        <!--1-->
+                        <p class = "txt_link">
+                            <a href="product.html">
+                                <span>迅雷产品</span>
+                                <i></i>
+                            </a>
+                        </p>
+                        <!--2-->
+                        <p class = "txt_good">
+                            <span>最逗趣音乐短视频社区</span>
+                        </p>
+                        <!-- 3-->
+                        <div class="txt_download">
+
+                            <a href="#">立即下载</a>
+
+                        </div>
+                        <!-- 4-->
+                        <p class="txt_zan">
+                            <a href="javascript:void (0)"></a>
+                            <span>677</span>人赞过
+                        </p>
+                    </div>
+
+                    <!-- 未移入显示区域开始-->
+                    <div class="hoverNoIcon">
+                        <div class="HNicon">
+                            <img src="imgs/index/product_logo%20(1).png" />
+                        </div>
+                        <p><span>有料</span><i class = "iconfont icon-shouji"></i></p>
+                    </div>
+                    <!-- 未移入显示区域开始-->
+
+
+                    <!-- img-->
+                    <img src="imgs/index/page4-3.png" class= "page-bg" width="100%"/>;
+                </div>
+
+
+                <!-- 迅雷有料结束-->
+
+
+                <!-- 不如小游戏开始-->
+
+                <div class="p4-right-inner" id="p4-right-smallGame">
+
+                    <!--hover-->
+                    <div class="hover" >
+                        <!--1-->
+                        <p class = "txt_link">
+                            <a href="TheAccelerator-xunLei.html">
+                                <span>迅雷加速器</span>
+                                <i></i>
+                            </a>
+                        </p>
+                        <!--2-->
+                        <p class = "txt_good">
+                            <span>迅雷旗下H5游戏娱乐平台</span>
+                        </p>
+                        <!-- 3-->
+                        <div class="txt_guanZhu">
+                            <a href="javascript:void (0)">立即关注</a>
+                        </div>
+                        <!-- 4-->
+                        <p class="txt_zan">
+                            <a href="javascript:void (0)"></a>
+                            <span>677</span>人赞过
+                        </p>
+                    </div>
+
+                    <!-- 未移入显示区域开始-->
+                    <div class="hoverNoIcon">
+                        <div class="HNicon">
+                            <img src="imgs/index/product_logo%20(1).png" />
+                        </div>
+                        <p><span>不如小游戏</span><i class = "iconfont icon-shouji"></i></p>
+                    </div>
+                    <!-- 未移入显示区域开始-->
+
+
+                    <!-- img-->
+                    <img src="imgs/index/page4-4.jpg" class= "page-bg" />;
+
+
+                </div>
+
+                <!-- 不如小游戏结束-->
+
+
+
+            </div>
+
+            <!-- 第四页右边结束-->
+
+        </div>
+
+        <!-- 第四页结束-->
+
+        <!-- 第五页开始-->
+
+        <div class="page page-box" id="page5">
+
+            <div class="content">
+
+
+                <!-- 下载宝开始-->
+
+                <div class="p5-xiaZaiBao">
+
+                    <!-- link-->
+                    <p class = "txt_link">
+
+                        <a href="#">
+                            <span>下载宝</span>
+                            <i></i>
+                        </a>
+                    </p>
+
+                    <!-- price-->
+                    <p class="txt_price">159元</p>
+
+                    <!--介绍 -->
+                    <p class = "txt_brief">
+                        为所有智能终端无限扩展容量，无需电脑和数据线实现数据共享，打造私人专属云盘。
+                    </p>
+                    <!-- buy-->
+                    <div class="buy">
+
+                        <a href="#">
+                            立即购买
+                        </a>
+                    </div>
+                    <!-- zan-->
+                    <p class="txt_zan">
+                        <a href="javascript:void (0)"></a>
+                        <span>1766</span>人赞过
+                    </p>
+
+
+
+
+                </div>
+                <!-- 下载宝结束-->
+
+
+                <!-- btn微信微博等-->
+                <div class="btn_box">
+                    <a href="#" class= "btn iconfont icon-weixin" id="weixin">
+                        <div id="page5-qr-code">
+                            <img src="imgs/index/201702151507485990.png" />
+                            <i></i>
+                        </div>
+                    </a>
+                    <a href="#" class= "btn iconfont icon-weibo btnMove" id="weibo" ></a>
+                    <a href="#" class= "btn btnMove" id="luntan">论</a>
+                    <a href="#" class= "btn btnMove" id="yang">阳</a>
+                </div>
+
+
+                <!-- 相关网页 -->
+                <p id="big_link">
+                    <a href="#">加入迅雷</a><i>|</i>
+                    <a href="#">关于迅雷</a><i>|</i>
+                    <a href="#">联系我们</a><i>|</i>
+                    <a href="#">在线客服</a><i>|</i>
+                    <a href="#">新闻中心</a><i>|</i>
+                    <a href="#">Investor Relations</a>
+                </p>
+
+
+                <!-- 相关资料-->
+
+                <p id="small_link">
+                    <a href="#">增值电信业务粤B2-20050219号</a><i>|</i>
+                    <a href="#">粤网文[2017]0901-125号</a><i>|</i>
+                    <a href="#">互联网药pin证书</a><i>|</i>
+                    <a href="#">互联网出版(粤)字503号</a>
+
+                </p>
+
+                <!-- 举报相关-->
+                <p id="jubao">
+                    违法信息举报热线电话:0755-86319951 &nbsp;&nbsp;Copyright © 2003-2017 XUNLEI.COM All Rights Reserved
+                </p>
+
+
+                <!-- 更多 -->
+                <ul id="more">
+
+                    <li><a href="#" id="more1" class = "more">
+                        <p>工商网监<br>电子标识</p>
+                    </a></li>
+                    <li><a href="#" id="more2" class = "more">
+                        <p>经营性网站<br>电子标识</p>
+                    </a></li>
+                    <li><a href="#" id="more3" class = "more">
+                        <p>不良信息<br>举报中心</p>
+                    </a></li>
+                    <li><a href="#" id="more4" class = "more">
+                        <p>网上有害信<br>息举报中心</p>
+                    </a></li>
+
+                </ul>
+            </div>
+            <div id="p5-bg">
+                <!-- bg-->
+                <img src="imgs/index/201702151506312041.jpg" class = "footerBG" />
+            </div>
+        </div>
+
+        <!-- 第五页结束-->
+        <!-- -----------------页面三--------------------------->
+
+
+    </div>
+
+    <!-- 轮转页面的结束-->
+</div>
+<!--页面切换结束-->
+
+
+</body>
+</html>
+
+<script src="js/index.js"></script>
+<script src = "js/conmon.js"></script>
+
+<!--<script>-->
+
+<!--//找到页面列表-->
+<!--var moreList = document.getElementById("more-nav");-->
+<!--var navList = document.getElementById("nav-list");-->
+
+
+<!--//鼠标移入事件-->
+<!--navList.onmouseover = function() {-->
+<!--//        animate(navList,156);-->
+<!--console.log("jjjjjjjjj");-->
+<!--}-->
+
+<!--navList.onmouseout = function() {-->
+<!--navList.style.display = "none";-->
+<!--}-->
+
+<!--</script>-->

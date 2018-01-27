@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+    border: 0 none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: "微软雅黑";
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+b,
+strong {
+    font-weight: normal;
+    font-family: "黑体";
+}
+
+i,
+em {
+    font-style: normal;
+    font-family: "黑体";
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.w {
+    width: 1212px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*---------------------------顶部横栏的css-----------------------*/
+
+/*logo开始*/
+.header {
+    width: 100%;
+    height: 85px;
+    position: absolute;
+    z-index: 999;
+}
+
+.header .logo {
+    width: 142px;
+    height: 64px;
+    float: left;
+    margin: 13px 0 0 40px;
+}
+
+.header .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header .logo a img {
+    width: 100%;
+    height: 100%;
+}
+/*logo结束*/
+
+/*顶部导航栏开始*/
+.header .header-nav {
+    height: 30px;
+    display: inline-block;
+    float: right;
+    margin: 23px 0 0 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.header .header-nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.header .header-nav li a{
+    display: block;
+    color: #fff;
+    width: 48px;
+    line-height: 30px;
+}
+.header .header-nav li:hover a {
+    border-bottom: 2px solid #fff;
+}
+/*顶部导航栏结束*/
+/*---------------------------顶部横栏的css-----------------------*/
+
+
+/*-----------------wrap主体广告部分开始----------------*/
+.windownsShx {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrap .wrap_ul {
+    width: 9515px;
+    height: 1080px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wrap .wrap_ul li {
+    width: 1903px;
+    height: 1080px;
+    position: relative;
+    float: left;
+}
+
+.wrap .wrap_ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap .wrap_ul li .btn_banner {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #fff;
+    position: absolute;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.wrap .wrap_ul li:first-child .btn_banner {
+    left: 45%;
+    bottom: 10%;
+}
+
+.wrap .wrap_ul li:nth-child(2) .btn_banner {
+    left: 45%;
+    bottom: 20%;
+}
+
+.wrap .wrap_ul li:nth-child(3) .btn_banner {
+    left: 63%;
+    bottom: 50%;
+}
+
+.wrap .wrap_ul li:nth-child(4) .btn_banner {
+    left: 45%;
+    top: 48%;
+}
+
+.wrap .wrap_ul li:last-child .btn_banner {
+    left: 45%;
+    bottom: 10%;
+}
+
+.wrap .banner_btns {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrap .banner_btns a {
+    margin: 0 4px 0;
+}
+.wrap .banner_btns a .ic_btn {
+    display: inline-block;
+    width: 30px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+/*----给轮播图索引增加蓝色背景----*/
+.wrap .banner_btns a .showblue {
+    background-color: #18affc;
+}
+
+/*-----------------wra体广告部分结束----------------*/
+
+/*-----电脑软件板块css开始------*/
+/*与智能硬件板块共用*/
+.products_area,
+.products_shen {
+    padding: 24px 0 52px 0;
+    background-color: #e5e7e8;
+}
+
+/*--------版块主题共用样式-------------*/
+.products_area h4,
+.products_shx h4,
+.products_shen h4 {
+    width: 1200px;
+    font-size: 22px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+}
+
+.products_area .products_list,
+.products_shx .products_list {
+    margin: 0 auto;
+}
+
+.products_area .products_list li,
+.products_shx .products_list li {
+     width: 392px;
+     height: 164px;
+     background-color: #fff;
+     float: left;
+     margin: 6px 6px;
+ }
+
+.products_area .products_list li:hover .btn_box a,
+.products_shx .products_list li:hover .btn_box a {
+    color: #2363fc;
+}
+
+.products_area .products_list .icon_shx,
+.products_shx .products_list .icon_shx {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin: 37px 33px 37px 37px;
+}
+
+@keyframes pound {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+
+.products_area .products_list li:hover .icon_shx img {
+    animation: pound 2s infinite;
+}
+
+.products_area .products_list .product_feed,
+.products_shx .products_list .product_feed,
+.products_shen .products_list .product_feed {
+    padding-top: 38px;
+}
+
+.products_area .products_list .product_feed h5 a,
+.products_shx .products_list .product_feed h5 a,
+.products_shen .products_list .product_feed h5 a {
+    font-size: 16px;
+    color: #000;
+}
+
+.products_area .products_list .product_feed h5 a:hover,
+.products_shx .products_list .product_feed h5 a:hover,
+.products_shen .products_list .product_feed h5 a:hover {
+    text-decoration: underline;
+}
+
+.products_area .products_list .product_feed p,
+.products_shx .products_list .product_feed p,
+.products_shen .products_list .product_feed p {
+    font-size: 14px;
+    color: #808080;
+}
+
+.products_area .products_list .product_feed .btn_box,
+.products_shx .products_list .product_feed .btn_box {
+    margin-top: 12px;
+    /*display: inline-block;*/
+    float: left;
+}
+
+.products_area .products_list .product_feed .btn_box a,
+.products_shx .products_list .product_feed .btn_box a {
+    color: #a3a3a3;
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #a3a3a3;
+    padding: 2px 4px;
+    margin: 0 15px 0 0;
+}
+
+.products_area .products_list .product_feed .btn_box a i,
+.products_shx .products_list .product_feed .btn_box a i {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 2px;
+    text-align: center;
+}
+
+.products_area .products_list .product_feed .btn_box a:hover,
+.products_shx .products_list .product_feed .btn_box a:hover {
+    border: 1px solid #2363fc;
+}
+
+.products_area .products_list .product_feed .btn_box p,
+.products_shx .products_list .product_feed .btn_box p {
+    font-size: 12px;
+}
+/*-----电脑软件板块css结束------*/
+
+/*--------移动软件css开始-----------*/
+.products_shx {
+    padding: 24px 0 52px 0;
+    background-color: #f6f6f6;
+}
+
+.products_shx .products_list li {
+    opacity: 1;
+}
+
+/*.products_shx .products_list li .icon_shx {*/
+    /*transition: All 0.4s ease-in-out;*/
+    /*-webkit-transition: All 0.4s ease-in-out;*/
+    /*-moz-transition: All 0.4s ease-in-out;*/
+    /*-o-transition: All 0.4s ease-in-out;*/
+/*}*/
+
+/*.products_shx .products_list li:hover .icon_shx {*/
+    /*transform: rotate(360deg);*/
+    /*-webkit-transform: rotate(360deg);*/
+    /*-moz-transform: rotate(360deg);*/
+    /*-o-transform: rotate(360deg);*/
+    /*-ms-transform: rotate(360deg);*/
+/*}*/
+
+/*--------移动软件css结束-----------*/
+
+/*----------------智能硬件css开始-----------*/
+
+.products_shen .products_list {
+    margin: 0 auto;
+}
+
+.products_shen .products_list li {
+    width: 392px;
+    height: 172px;
+    background-color: #fff;
+    float: left;
+    margin: 6px 6px;
+}
+
+.products_shen .products_list li .icon_shx {
+    width: 172px;
+    height: 172px;
+    float: left;
+    margin-right: 33px;
+}
+
+.products_shen .products_list .product_feed h5 {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.products_shen .products_list .product_feed .buy {
+    width: 168px;
+    height: 34px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    float: left;
+    margin-top: 35px;
+    color: #ff4d4d;
+}
+
+/*----------------智能硬件css结束-----------*/
+
+/*----------------底部通栏css开始-----------*/
+
+.footer {
+    padding: 45px 0 25px 0;
+    background-color: #9a9d9d;
+}
+
+.footer .follow .text_follow {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+
+.footer .follow .QR_code {
+    width: 210px;
+    height: 50px;
+    margin: 24px auto 0;
+}
+
+.footer .follow .QR_code a {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.1);
+    margin: 0 10px;
+    position: relative;
+}
+
+.footer .follow .QR_code a:first-child {
+    background-image: url("../imgs/product/follow_spr.png");
+}
+
+.footer .follow .QR_code a:nth-child(2) {
+    background-image: url("../imgs/product/follow_spr.png");
+    background-position: -70px 0;
+}
+
+.footer .follow .QR_code a:nth-child(3) {
+    background-image: url("../imgs/product/follow_spr.png");
+    background-position: -140px 0;
+}
+
+.footer .follow .QR_code a:first-child:hover {
+    background-image: url("../imgs/product/follow_spr.png");
+    background-position: 0 -73px;
+}
+
+.footer .follow .QR_code a:nth-child(2):hover {
+    background-image: url("../imgs/product/follow_spr.png");
+    background-position: -70px -73px;
+}
+
+.footer .follow .QR_code a:nth-child(3):hover {
+    background-image: url("../imgs/product/follow_spr.png");
+    background-position: -140px -73px;
+}
+
+.footer .follow .QR_code a .official {
+    position: absolute;
+    left: -40px;
+    top: -145px;
+    width: 119px;
+    height: 113px;
+    background-color: #fff;
+    display: none;
+    padding: 5px;
+}
+
+.footer .follow .QR_code a .official .triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -16px;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+}
+
+.footer .follow .QR_code a:first-child:hover .official {
+    display: block;
+}
+
+.footer .follow .f_navLink {
+    padding: 50px 0 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer .follow .f_navLink a {
+    margin: 0 17px;
+    font-size: 18px;
+    color: #f6f6f6;
+}
+
+.footer .follow .f_navLink a:hover {
+    text-decoration: underline;
+}
+
+.footer .follow .bot_link {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer .follow .bot_link a {
+    color: #f6f6f6;
+}
+
+.footer .follow .bot_link a:hover {
+    text-decoration: underline;
+}
+
+.footer .follow .bot_link span {
+    color: #f6f6f6;
+}
+
+.footer .follow .statement {
+    font-size: 12px;
+    color: #f6f6f6;
+    text-align: center;
+    margin-top: 3px;
+}
+
+/*----------------底部通栏css结束-----------*/

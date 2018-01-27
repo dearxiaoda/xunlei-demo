@@ -1,0 +1,328 @@
+ul,
+ol,
+li,
+img,
+div,
+body,
+span,
+input,
+a,
+strong,
+i,
+em,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+.w {
+    width: 1349px;
+    background-color: #f0f3f5;
+    margin: 0 auto;
+}
+
+input {
+    border: 0 none;
+    outline: none;
+}
+
+.clearfix:after {
+    content: "";
+    visibility: hidden;
+    height: 0;
+    clear: both;
+    display: block;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+b,
+strong {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font: 12px/100% "微软雅黑";
+    /*background-color: #f0f3f5;*/
+    /*background-color: black;*/
+}
+
+/*样式清楚结束*/
+/*基础样式开始*/
+
+
+#J_dotLine{
+    display: block;
+    margin: 0;
+    /*height: 150%;*/
+    width: 100%;
+}
+#w-header {
+    background-color: transparent;
+    height: 10%;
+    position: absolute;
+    width: 100%;
+}
+
+#w-logo {
+    position: absolute;
+    width: 134px;
+    height: 50px;
+    left: 13%;
+    top: 35%;
+}
+
+#w-logo h1 a {
+    display: block;
+    width: 134px;
+    height: 50px;
+}
+
+#w-logo h1 p {
+    height: 0;
+    overflow: hidden;
+    line-height: 0;
+    text-indent: -999em;
+    font-size: 0;
+}
+#w-header #text {
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 40px;
+    position: absolute;
+    font-weight: 300;
+    left: 17.2%;
+    top: 48%;
+}
+
+#w-header .w-connect {
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    font-size: 14px;
+    right: 178px;
+}
+
+#w-header .w-connect:hover {
+    text-decoration: underline;
+}
+
+/*//版心css*/
+
+
+ .w-hotV {
+    position: absolute;
+    width: 245px;
+    height: 510px;
+    background-color: #f7f7f7;
+    left: 20%;
+    top: 26%;
+    border-radius: 34px;
+}
+
+ .w-hotV .w-video {
+    width: 221px;
+    height: 393px;
+    margin: 46px auto 0;
+}
+.w-hotV #btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: url("imgs/youliao/voice_spr.png") -1px -1px;
+    position: absolute;
+    bottom: 11px;
+    /*border: 1px solid #666666;*/
+    left: 105px;
+    /*transform: translateX(-50%);*/
+    animation: xuanzhuan 1.2s infinite linear;
+}
+
+@keyframes xuanzhuan {
+    0%{}
+    25%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+
+    /*100%{*/
+        /*jump: translateY(3px);*/
+    /*}*/
+}
+
+
+
+/*#btn2 {*/
+    /*width: 37px;*/
+    /*height: 37px;*/
+    /*border-radius: 50%;*/
+    /*background: url("imgs/youliao/voice_spr.png");*/
+    /*position: absolute;*/
+    /*right: 13.1%;*/
+    /*top: 15%;*/
+    /*border: 2px solid red;*/
+/*}*/
+
+
+
+/*-------------------------------------------------*/
+.w-downL {
+    width: 155px;
+    /*height: 320px;*/
+    position: absolute;
+    right: 28%;
+    top: 40%;
+    text-align: center;
+
+}
+
+ .w-downL .w-text {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 16px;
+}
+
+#w-Qr-code {
+    width: 155px;
+    height: 155px;
+    background-color: #fff;
+    position: relative;
+    margin-top: 12px;
+    border-radius: 3px;
+}
+#w-Qr-code img {
+    position: absolute;
+    left: 4px;
+    top: 3px;
+}
+.w-downL .dl {
+    width: 155px;
+    height: 43px;
+    position: absolute;
+    border-radius: 4px;
+}
+.w-downL #ios {
+    bottom: 68px;
+}
+.w-downL #ios i {
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 39px;
+    background: url("imgs/youliao/download_spr.png");
+
+}
+.w-downL #ios span {
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    left: 59px;
+    top: 5px;
+
+}
+.w-downL #az {
+    bottom: 21px;
+}
+.w-downL #ios i {
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 39px;
+    background: url("imgs/youliao/download_spr.png");
+
+}
+.w-downL #az span {
+    color: #ffffff;
+    font-size: 14px;
+    position: absolute;
+    left: 47px;
+    top: 5px;
+}
+.w-downL #az i {
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 27px;
+    background: url("imgs/youliao/download_spr.png") 0 -26px;
+
+}
+
+#title {
+    font-size: 16px;
+    color: #ffffff;
+    position: absolute;
+    top: 112%;
+    left: 15%;
+}
+#shoufengqin {
+    width: 73%;
+    height: 279px;
+    position: absolute;
+    /*background-color: red;*/
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120%;
+    border-radius: 10px;
+}
+
+
+#shoufengqin li{
+    width: 15%;
+    background-color: #ffffff;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+    margin-left: 1%;
+}
+#shoufengqin li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#shoufengqin li  img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*#haoxiang img {*/
+    /*width: 10px;*/
+    /*height: 10px;*/
+/*}*/
+
+
+/*----------------------------------------------------------------*/

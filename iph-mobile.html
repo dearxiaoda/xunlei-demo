@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/iph-reset.css"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .slider {
+            height: 350px;
+            width: 700px;
+            margin: 100px auto;
+            right: 30px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .slider li {
+            position: absolute;
+            display: none;
+        }
+
+        .slider li img {
+            height: 350px;
+            width: 700px;
+        }
+        .slider li:first-child {
+            display: block;
+        }
+
+
+        .arrow {
+            display: none;
+        }
+
+        .slider:hover .arrow {
+            display: block;
+        }
+
+        .arrow-left,
+        .arrow-right {
+            font-family: "SimSun", "宋体";
+            width: 30px;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 50%;
+            margin-top: -30px;
+            cursor: pointer;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .arrow-left:hover,
+        .arrow-right:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .arrow-left {
+            left: 0;
+        }
+
+        .arrow-right {
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+
+<!------------------------------------>
+<!--大图里面的内容-->
+<div class="big">
+    <!-- 右侧的手机图片------------轮播图-------------------->
+    <div class="m-anright">
+        <div class="slider">
+            <!--图片容器  8图 -->
+            <ul>
+                <li><a href="#"><img src="images/2.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/3.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/4.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/5.jpg" alt=""></a></li>
+                <li><a href="#"><img src="images/6.jpg" alt=""></a></li>
+
+            </ul>
+            <!--箭头-->
+            <div class="arrow">
+                <span class="arrow-left">&lt;</span>
+                <span class="arrow-right">&gt;</span>
+            </div>
+        </div>
+        <!-------------- 轮播图结束------------------------------->
+
+        <div id="m-edition">
+        <a href="mobile.html" id="m-android" class="edition"><img src="./imgs/mobile/m-android.png" alt=""/></a>
+        <a href="javascript:" id="m-ipa"><img src="./imgs/mobile/m-iph.png" alt=""/></a>
+        <a href="ipd-mobile.html" class="m-ipd "><img src="./imgs/mobile/m-ipa.png" alt=""/></a>
+    </div>
+    <div id="m-main" class="m-main reveal">
+        <div class="m-banner w">
+            <!-- logo-->
+            <div class="m-logo">
+                <a href="index.html">
+                    <img src="./imgs/mobile/m-logo.png" alt=""/>
+                </a>
+            </div>
+
+            <div class="m-down">
+                <p class="xunlei">迅雷Hi <span>2.3</span></p>
+                <!--<p class="update">新版更新内容:</p>-->
+                <p class="specialty">
+                    1）短视频功能、关注页面全新上线
+                </p>
+                <p class="specialty-1">
+                    2）优化直播观看体验
+                </p>
+                <p class="download">
+                    <a href="#" class="xiazai"><img src="./imgs/mobile/m-download.png" alt=""/></a>
+                    <img src="./imgs/mobile/miph-qrcode.png" alt="" class="qr"/>
+
+                </p>
+                <p class="text">34.35MB<b>|</b>2017.11.30更新 <span>通过其他方式安装 <i><img src="./imgs/mobile/header-othersetup.png" alt=""/></i></span></p>
+
+            </div>
+
+                <!--<img src="./imgs/mobile/m-ipright.png" alt=""/>-->
+            </div>
+        </div>
+    </div>
+    <div id="next" class="m-main"></div>
+    <div id="over" class="m-main"></div>
+</div>
+
+<!--视频直播模块-->
+<div class="m-video w clearfix">
+    <ul>
+        <li>
+            <img src="./imgs/mobile/m-my.jpg" alt=""/>
+            <p class="title">美颜直播</p>
+            <p class="one">美出新高度，感觉萌萌哒！</p>
+            <p class="two">精致而灵动，就是有内涵！</p>
+        </li>
+        <li>
+            <img src="./imgs/mobile/m-zb.jpg" alt=""/>
+            <p class="title">直播互动</p>
+            <p class="one">动效礼物多，红包满天飞！</p>
+            <p class="two">抢宝游戏乐，high爆全场！</p>
+        </li>
+        <li>
+            <img src="./imgs/mobile/m-sp.jpg" alt=""/>
+            <p class="title">视频拍摄</p>
+            <p class="one">随时随地拍，秀出真自我！</p>
+            <p class="two">不在线也能轻松涨粉哦！</p>
+        </li>
+        <li>
+            <img src="./imgs/mobile/m-tx.jpg" alt=""/>
+            <p class="title">视频特效</p>
+            <p class="one">清新滤镜，梦幻MV</p>
+            <p class="two">普通视频秒变大片！</p>
+        </li>
+
+    </ul>
+</div>
+<!--底部-->
+<div class="m-footer">
+    <p class="chaining">
+        <a href="#">迅雷官网</a>
+        <i>|</i>
+        <a href="#">产品中心</a>
+    </p>
+    <p class="over">Copyright 2003-2016，迅雷网络版权所有 著作权保护声明</p>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    <!-- 下面直播列表盒子阴影效果-->
+    $(function () {
+        $(".m-video>ul>li").mouseenter(function () {
+
+            $(this).css({opacity:1,"box-shadow":"0px 0px 6px 6px #ccc"}).siblings().css({opacity:0.3});
+        })
+        $(".m-video").mouseleave(function () {
+            $(".m-video>ul>li").css({opacity:1,"box-shadow":"0 0 0 #ccc"});
+
+        })
+    })
+
+//    ----------------------------轮播图盒子阴影------------------------
+    $(".slider").css({opacity:1,"box-shadow":"0px 0px 6px 6px #666"});
+</script>
+
+<!--------------------------轮播图--------------------------->
+<script>
+    $(function () {
+        var idx = 0;
+
+        //右边按钮
+        $('.arrow>.arrow-right').click(function () {
+            idx++;
+            if(idx == 5){
+                idx = 0;
+            }
+
+            $('.slider>ul>li').eq(idx).fadeIn(500).siblings().fadeOut(500);
+        });
+
+
+        //左边的按钮
+        $('.arrow>.arrow-left').click(function () {
+            idx--;
+            if(idx < 0){
+                idx = 4;
+            }
+            $('.slider>ul>li').eq(idx).fadeIn(800).siblings().fadeOut(800);
+        });
+
+
+    });
+</script>

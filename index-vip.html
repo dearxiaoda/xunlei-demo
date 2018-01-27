@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index-vip.css "/>
+    <style type="text/css">
+        .withLove {
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 2em;
+            cursor: pointer;
+        }
+        @media screen and (min-width: 900px) {
+            .withLove {
+                margin-top: 825px;
+            }
+        }
+        .withLove * {
+            display: inline-block;
+        }
+
+        .withLove .alpha, .withLove .omega {
+            width: 40%;
+        }
+        .withLove .alpha {
+            text-align: right;
+        }
+        .withLove .omega {
+            text-align: left;
+        }
+        .withLove .heart {
+            margin: 500px -600px;
+            position: absolute;
+            z-index: 4;
+            -webkit-animation: throb 1s ease-in-out infinite;
+            animation: throb 1s ease-in-out infinite;
+        }
+        .withLove {
+            margin-top: 125px;
+        }
+        .withLove .heart path {
+            fill:hotpink;
+        }
+        @media screen and (min-width: 300px) {
+            .withLove .heart {
+                width: 30px;
+                height: 30px;
+                top: .66em;
+            }
+        }
+        @media screen and (min-width: 460px) {
+            .withLove .heart {
+                top: .8em;
+                width: 300px;
+                height: 300px;
+            }
+        }
+        @-webkit-keyframes throb {
+            0% {
+                -webkit-transform: scale(1);
+            }
+            50% {
+                -webkit-transform: scale(0.5);
+            }
+            100% {
+                -webkit-transform: scale(1);
+            }
+        }
+        @keyframes throb {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(0.3);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .snow-container {
+            position: absolute;
+            height: 500px;
+            width: 100%;
+            max-width: 100%;
+            top: 0;
+            overflow: hidden;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .snow {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+            -webkit-animation: snow linear infinite;
+            animation: snow linear infinite;
+        }
+        .snow.foreground {
+            background-image: url("https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-large-075d267ecbc42e3564c8ed43516dd557.png");
+            -webkit-animation-duration: 15s;
+            animation-duration: 15s;
+        }
+        .snow.foreground.layered {
+            -webkit-animation-delay: 7.5s;
+            animation-delay: 7.5s;
+        }
+        .snow.middleground {
+            background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-medium-0b8a5e0732315b68e1f54185be7a1ad9.png);
+            -webkit-animation-duration: 20s;
+            animation-duration: 20s;
+        }
+        .snow.middleground.layered {
+            -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+        }
+        .snow.background {
+            background-image: url(https://dl6rt3mwcjzxg.cloudfront.net/assets/snow/snow-small-1ecd03b1fce08c24e064ff8c0a72c519.png);
+            -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+        }
+        .snow.background.layered {
+            -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+        }
+
+        @-webkit-keyframes snow {
+            0% {
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                -webkit-transform: translate3d(15%, 100%, 0);
+                transform: translate3d(15%, 100%, 0);
+            }
+        }
+
+        @keyframes snow {
+            0% {
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+            100% {
+                -webkit-transform: translate3d(15%, 100%, 0);
+                transform: translate3d(15%, 100%, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+<!--导航栏部分-->
+<div  class="topLy ">
+   <div  class="navLy w">
+       <h1 class="logoLy">
+           <a href="#"></a>
+       </h1>
+       <ul  class="short-cutLy">
+           <li><a href="index.html">首页</a></li>
+           <li><a>功能特效</a></li>
+           <li><a>会员等级</a></li>
+           <li><a>超级会员</a></li>
+           <li><a>年费专区</a></li>
+           <li><a>文件邮</a></li>
+           <li><a>金融超市</a></li>
+       </ul>
+     <span class="userInfoLy">
+           <i></i>
+         <a href="#">立即登录</a>
+     </span>
+   </div>
+</div>
+<!--导航栏部分结束-->
+<!--banner部分开始-->
+<div  class="bannerLy">
+    <!--下雪开始-->
+    <div class="snow-container">
+        <div class="snow foreground"></div>
+        <div class="snow foreground layered"></div>
+        <div class="snow middleground"></div>
+        <div class="snow middleground layered"></div>
+        <div class="snow background"></div>
+        <div class="snow background layered"></div>
+    </div>
+    <!--下雪结束-->
+    <div  class="shopLy w" >
+        <!--轮播图部分开始-->
+        <!--开通迅雷会员部分开始-->
+        <div  class="userLoginLy">
+            <a  class="loginLy">
+           开通迅雷会员
+            </a>
+        </div>
+        <ul  class="ul1">
+            <li><a href="#"><img src="imgs/index-vip/1.png" alt=""></a></li>
+            <li><a href="#"><img src="imgs/index-vip/201711271851374283.png" alt=""></a></li>
+            <li><a href="#"><img src="imgs/index-vip/201712091507374512.png" alt=""></a></li>
+            <li><a href="#"><img src="imgs/index-vip/201711211759517554.png" alt=""></a></li>
+            <li><a href="#"><img src="imgs/index-vip/201708181830143337.png" alt=""></a></li>
+            <li><a href="#"><img src="imgs/index-vip/201712081940013665.png" alt=""></a></li>
+        </ul>
+        <!--开通迅雷会员部分结束-->
+        <!--两边的箭头开始-->
+        <a class="leftLy" href="javascript:"></a>
+        <a class="rightLy" href="javascript:"></a>
+        <!--两边箭头部分结束-->
+        <!--中间导航栏部分开始-->
+        <div  class="picGuideLy">
+            <i class="clear ">年末壕礼</i>
+            <i>免费补贴</i>
+            <i>会员福袋</i>
+            <i>重磅公测</i>
+            <i>金融超市</i>
+            <i>1分立抢</i>
+        </div>
+    </div>
+    <!--中间导航栏部分结束-->
+    <!--轮播图部分结束-->
+    <!--每日领钱部分开始-->
+    <div    class="middleCutLy w">
+        <div  class="middleNav">
+            <ul   class="moneyLy">
+                <li class="liLy  bgcLy">
+                      <span   class="moneyLy1  titLy0"></span>
+                          <span class="moneytit txtColorLy">每日领钱</span>
+                          <span class="moneytxt  titColorLy">金融超市送理财金</span>
+                  </li>
+                  <li class="bgcLy">
+                      <span   class="moneyLy1  titLy1"></span>
+                      <span class="moneytit">超会福利</span>
+                      <span class="moneytxt">收集能量领好礼</span>
+                      <b></b>
+                      <em></em>
+                  </li>
+                  <li class="bgcLy">
+                      <span   class="moneyLy1 titLy2"></span>
+                      <span class="moneytit">游戏周边</span>
+                      <span class="moneytxt">游戏福利领不停</span>
+                      <b></b>
+                      <em></em>
+                  </li>
+                  <li class="bgcLy">
+                      <span   class="moneyLy1  titLy3"></span>
+                      <span class="moneytit">活动</span>
+                      <span class="moneytxt">年费会员免费拿</span>
+                  </li>
+                  <li class="bgcLy">
+                      <span   class="moneyLy1  titLy4"></span>
+                      <span class="moneytit">借贷福利</span>
+                      <span class="moneytxt">送免息和会员</span>
+                  </li>
+              </ul>
+            <div  class="productLy ">
+                <!--table1开始-->
+              <ul class="productTitle  selectLy  positionLy  ">
+                  <li class="borderLy1">
+                  <p class="p1Ly">会员最高可领<i style="color:#e41e27"><strong  style="font-size: 22px;">600</strong>理财金</i></p>
+                  <p class="p11Ly">600理财金可收益0.06元</p>
+                      <span  class="but1">立即领取</span>
+                  </li>
+                  <li  class="borderLy1">
+                      <p class="p2Ly">免费领收益</p>
+                      <p class="p21Ly">300理财金</p>
+                      <p class="p22Ly">可收益0.03元</p>
+                      <span  class="but2">去赚钱>></span>
+                      <div class="piccLy1"></div>
+                  </li>
+                  <li  class="borderLy1">
+                      <p class="p2Ly">免费领收益</p>
+                      <p class="p21Ly">300理财金</p>
+                      <p class="p22Ly">可收益0.03元</p>
+                      <span  class="but2">去赚钱>></span>
+                      <div class="piccLy2"></div>
+                  </li>
+                  <li  class="borderLy1">
+                      <p class="p2Ly">免费领收益</p>
+                      <p class="p21Ly">300理财金</p>
+                      <p class="p22Ly">可收益0.03元</p>
+                      <span  class="but2">去赚钱>></span>
+                      <div class="piccLy3"></div>
+                  </li>
+              </ul>
+                <!--table1结束-->
+                <!--table2开始-->
+                <ul class="productTitle productLy1">
+                    <li class="borderLy2">
+                        <div class="tableLy2"></div>
+                        <div class="tableLy21"></div>
+                        <!--<div class="tableLy21"></div>-->
+                        <div class="tableLy211"></div>
+                        <p class="tablebut21">采集能量</p>
+                        <div class="tabletxtboLy2">
+                        <span   class="tabletxtLy21">收货地址</span>
+                        <span class="tabletxtLy21">领取记录</span>
+                        <span class="tabletxtLy21">活动规则</span>
+                        </div>
+                    </li>
+                    <li class="borderLy2">
+                        <div class="tableLy221"></div>
+                        <div class="tableLy222"></div>
+                        <p class="tableLy223">未解锁</p>
+                        <p class="tableLy224">2</p>
+                    </li>
+                    <li class="borderLy2">
+                        <div class="tableLy2212"></div>
+                        <div class="tableLy2222"></div>
+                        <p class="tableLy223">未解锁</p>
+                        <p class="tableLy224">10</p>
+                    </li>
+                    <li class="borderLy2">
+                        <div class="tableLy231"></div>
+                        <div class="tableLy232"></div>
+                        <p class="tableLy223">未解锁</p>
+                        <p class="tableLy224">50</p>
+                    </li>
+                    <li class="borderLy2">
+                        <div class="tableLy241"></div>
+                        <div class="tableLy242"></div>
+                        <p class="tableLy223">未解锁</p>
+                        <p class="tableLy224">155</p>
+                    </li>
+                </ul>
+                    <!-- table2结束-->
+                <!--table3开始-->
+                <ul class="productTitle  productLy2 ">
+                    <li  class="borderLy3">
+                       <p class="gameLy31">游戏兑换券</p>
+                        <p class="gameLy32">白金会员<span>1</span>张&nbsp;&nbsp;|&nbsp;&nbsp;超级会员<span>2</span>张</p>
+                        <i class="gameLybut34">立即领取</i>
+                        <p class="gameLy33">剩余<span>0</span>游戏兑换券 &nbsp;&nbsp;<span>兑换>></span></p>
+                        <span  class="gameLy34">牛X积分兑换</span>
+                    </li>
+                    <li class="borderLy3">
+                        <div class="gameLy321 "> </div>
+                        <p  class="gameLy322 ">消耗<span>20</span>游戏兑换币 </p>
+                        <div class="gameLy323 ">领光了 </div>
+                    </li>
+                    <li class="borderLy3">
+                        <div class="gameLy331 "> </div>
+                        <p  class="gameLy332 ">消耗<span>60</span>游戏兑换币 </p>
+                        <div class="gameLy333 ">立即兑换 </div>
+                    </li>
+                    <li class="borderLy3">
+                        <div class="gameLy341 "> </div>
+                        <p  class="gameLy332 ">消耗<span>105</span>游戏兑换币 </p>
+                        <div class="gameLy333 ">立即兑换 </div>
+                    </li>
+                </ul>
+                <!--table3结束-->
+                <!--table4开始-->
+                <ul class="productTitle    productLy3">
+                     <li  class="borderLy4">
+                          <div class="activeLy411">
+                          </div>
+                         <p class="activeLy412">开宝箱</p>
+                         <p class="activeLy413">赢12个月会员</p>
+                         <div class="activeLy414">立即领取</div>
+                     </li>
+                    <li  class="borderLy4">
+                        <div class="activeLy421">
+                        </div>
+                        <p class="activeLy412">年末壕礼</p>
+                        <p class="activeLy413">领iphone8+1年会员</p>
+                        <div class="activeLy414">一键领取</div>
+                    </li>
+                    <li  class="borderLy4">
+                        <div class="activeLy411">
+                        </div>
+                        <p class="activeLy412">0.01元</p>
+                        <p class="activeLy413">抢1个月会员</p>
+                        <div class="activeLy414">立即抢购</div>
+
+                    </li>
+                </ul>
+                <!--table4结束-->
+                <!--table5开始-->
+              <ul class="productTitle    productLy4">
+                  <li class="borderLy5">
+                      <p   class="futureLy410">测试借钱额度</p>
+                      <div  class="futureLy411">
+                      </div>
+                      <div class="futureLy412">立即测试</div>
+                  </li>
+                  <li class="borderLy5">
+                      <div  class="futureLy420"></div>
+                      <p  class="futureLy421">Apple  Iphone8 plus 国行正品</p>
+                      <p  class="futureLy422">疯抢价￥688</p>
+                  </li>
+                  <li class="borderLy5">
+                      <div  class="futureLy430"></div>
+                      <p  class="futureLy421">Vivo X20  移动4G国行正品</p>
+                      <p  class="futureLy422">疯抢价￥2998</p>
+                  </li>
+                  <li class="borderLy5">
+                      <div  class="futureLy440"></div>
+                      <p  class="futureLy421">美图T8 自拍神器 全网通4G 国行正品</p>
+                      <p  class="futureLy422">疯抢价￥3799</p>
+                  </li>
+
+              </ul>
+                <!--table5结束-->
+            </div>
+        </div>
+        <!--每日领钱部分结束-->
+</div>
+<!--banner部分结束-->
+<!--美女部分开始-->
+<div  class="lifeLy  ">
+    <div  class="textLy  w ">
+<!--小心心部分开始-->
+        <div class="withLove"> <span data-scroll-reveal-initialized="true" style="-webkit-transform: translatex(0);transform: translatex(0);opacity: 1;-webkit-transition: -webkit-transform 1s ease-in-out 0s,  opacity 1s ease-in-out 0s;transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-id="53" class="alpha" data-scroll-reveal="move 50px enter left over 1s no reset"></span>
+
+            <svg class="heart" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="92.515px" height="73.161px" viewBox="0 0 92.515 73.161" enable-background="new 0 0 92.515 73.161" xml:space="preserve">
+	  <g>
+	    <path d="M82.32,7.888c-8.359-7.671-21.91-7.671-30.271,0l-5.676,5.21l-5.678-5.21c-8.357-7.671-21.91-7.671-30.27,0          c-9.404,8.631-9.404,22.624,0,31.255l35.947,32.991L82.32,39.144C91.724,30.512,91.724,16.52,82.32,7.888z" fill="#010101"></path>
+	  </g>
+	  </svg>
+            <span data-scroll-reveal-initialized="true" style="-webkit-transform: translatex(0);transform: translatex(0);opacity: 1;-webkit-transition: -webkit-transform 1s ease-in-out 0s,  opacity 1s ease-in-out 0s;transition: transform 1s ease-in-out 0s, opacity 1s ease-in-out 0s;-webkit-perspective: 1000;-webkit-backface-visibility: hidden;" data-scroll-reveal-id="54" class="omega" data-scroll-reveal="move 50px enter right over 1s no reset"></span> </div>
+        <!--小心心部分结束-->
+        <p class="rightTopLy">现在的我</p>
+        <p class="rightMiddleLy">超级会生活</p>
+        <span  class="rightDownLy1">我喜欢闲暇时品一杯咖啡</span>
+        <span class="rightDownLy2">下载一部高清电影，在游戏世界里畅快淋漓</span>
+            <a href="" class="rightDownLy3">超级会员</a>
+          <ul>
+              <li><a href="#" ><i></i></a></li>
+              <li><a href="#"><i></i></a></li>
+              <li><a href="#"><i></i></a></li>
+          </ul>
+
+    </div>
+
+</div>
+<!--美女部分结束-->
+<!--电影美女部分开始-->
+<div  class="moiveLy ">
+    <div  class="textLy  w ">
+        <p class="rightTopLy">看个电影</p>
+        <p class="rightMiddleLy">没那么麻烦</p>
+        <span  class="rightDownLy1">你们看电影要下载几个小时</span>
+        <span class="rightDownLy2">我都已经用手机迅雷"秒杀下载好"后看完了</span>
+        <a href="" class="rightDownLy3">白金会员</a>
+        <ul>
+            <li><a href="#" ><i></i></a></li>
+            <li><a href="#"><i></i></a></li>
+            <li><a href="#"><i></i></a></li>
+        </ul>
+    </div>
+</div>
+<!--电影美女部分结束-->
+<!--帅哥部分开始-->
+<div  class="widthDieLy ">
+    <div  class="textLy  w ">
+        <p class="rightTopLy">提升宽带 &nbsp; 我们也行</p>
+        <span  class="rightDownLy1">还去营业厅辛苦排队？来试试快鸟一键宽带提速吧</span>
+        <span class="rightDownLy2">足部出户，享受最高100M的光纤极速</span>
+        <a href="" class="rightDownLy3">快鸟会员</a>
+        <ul>
+            <li><a href="#" ><i></i></a>
+            </li>
+            <li><a href="#"><i></i></a></li>
+            <li><a href="#"><i></i></a></li>
+        </ul>
+    </div>
+</div>
+<!--帅哥部分结束-->
+<!--底部样式开始-->
+<div  class="bottomLy  w">
+    <!--会员服务部分开始-->
+      <dl class="dl1   clear">
+          <dt class="dt1">迅雷会员服务</dt>
+          <dd  class="vipseveiceLy ">
+              <a href="#" class="linkLy1">
+                  <i class="marketLy1"></i>
+                  会员天猫商城
+              </a>
+              <a href="#" class="linkLy2">
+                  <i class="marketLy2"></i>
+                  迅雷快鸟
+              </a>
+              <a href="#" class="linkLy3">
+                  <i class="marketLy3"></i>
+                  迅雷快鸟
+              </a>
+              <a href="#" class="linkLy4">
+                  <i class="marketLy4"></i>
+                  迅雷快鸟
+              </a>
+              <a href="#" class="linkLy5">
+                  <i class="marketLy5"></i>
+                  迅雷快鸟
+              </a>
+              <a href="#" class="linkLy6">
+                  <i class="marketLy6"></i>
+                  迅雷快鸟
+              </a>
+          </dd>
+      </dl>
+    <!--会员服务部分结束-->
+    <!--会员专属客服部分开始-->
+   <dl  class="dl2">
+         <dt class="dt2">迅雷会员专属客服</dt>
+       <i class="numLy">400-11111-000</i>
+       <span class="timeLy"></span>
+       <ul>
+           <li>帮助中心</li>
+           <li>在线客服</li>
+       </ul>
+   </dl>
+    <!--会员专属客服部分结束-->
+    <!--关注部分开始-->
+    <dl  class="dl3">
+       <dt  class="dt3">关注我们</dt>
+        <dd   class="dd3">
+            <a href="#" class="linkLy2">
+                <i class="marketLy31"></i>
+                关注新浪微博
+            </a>
+            <a href="#" class="linkLy3">
+                <i class="marketLy32"></i>
+                关注微信
+            </a>
+            <a href="#" class="linkLy4">
+                <i class="marketLy34"></i>
+                关注微信
+            </a>
+        </dd>
+    </dl>
+    <!--关注部分结束-->
+</div>
+<!--底部样式结束-->
+<!--顶部导航栏开始-->
+<div   class="bottomNayLy   w">
+  <ul>
+      <li>关于迅雷</li>
+      <li>下载迅雷</li>
+      <li>加盟迅雷</li>
+      <li>广告服务</li>
+      <li>商务合作</li>
+      <li>客服中心</li>
+      <li>安全中心</li>
+      <li>用户协议</li>
+  </ul>
+    <p>@2003-2017Xuelei.com版权所有</p>
+
+</div>
+</div>
+</body>
+</html>
+<script  src="js/jquery-1.12.4.js"></script>
+<script  src="js/index-vip.js"></script>

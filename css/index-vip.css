@@ -1,0 +1,1407 @@
+/*初式化代码*/
+div,
+p,
+a,
+li,
+ul,
+body,
+b,
+i,
+span,
+h1,
+image,
+h2,
+h3,
+h4,
+input{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+h1,
+h2,
+h3,
+h4{
+    font-weight:normal;
+}
+input{
+    border: 0 none;
+    outline:none;
+}
+img{
+    border:0 none;
+    vertical-align: middle;
+}
+body{
+    font:12px/100% "微软雅黑";
+}
+i
+,
+em{
+    font-style:normal;
+}
+b {
+    font-weight:normal;
+}
+.clearfix::after{
+    content:"";
+    display:block;
+    height:0;
+    visibility: hidden;
+    clear:both;
+}
+.clear{
+    *zoom:1;
+}
+.w{
+    width: 1200px;
+    margin:0 auto;
+}
+/*顶部栏样式开始*/
+.topLy{
+    width: 100%;
+    height:70px;
+    background-color:rgba(69,9,12,0.9);
+    position: relative;
+    z-index: 1;
+}
+.topLy .navLy {
+    height: 70px;
+    position: relative;
+}
+.topLy .navLy .logoLy a{
+    height:40px;
+    width:102px;
+    background-image: url("../imgs/index-vip/logo_hd.png");
+     display:inline-block;
+      margin-top:9px;
+    float:left;
+}
+.topLy .navLy .logoLy:hover  a{
+    background-image: url("../imgs/index-vip/logo_hd_hv.png");
+}
+.topLy .navLy  .short-cutLy {
+ position: absolute;
+    left:135px;
+}
+.topLy .navLy  .short-cutLy li{
+    float:left;
+    margin-right:30px;
+}
+.topLy .navLy .short-cutLy li a{
+    color:#ffffff;
+    display:inline-block;
+    line-height:61px;
+}
+.topLy .navLy .short-cutLy li:first-child  a{
+    color:#aaaaaa
+}
+.topLy .navLy .short-cutLy li:hover a{
+    color:#aaaaaa
+}
+.topLy .navLy  .userInfoLy {
+    position: absolute;
+    left:1022px;
+}
+.topLy .navLy  .userInfoLy i{
+    width: 32px;
+    height: 32px;
+    border-radius:50%;
+    float:left;
+    background:url("../imgs/index-vip/bg_base_spr24.png") -101px 0px no-repeat;
+    margin-top:17px;
+}
+.topLy .navLy  .userInfoLy:hover  i{
+    background-position:-251px 0px;
+}
+.topLy .navLy .userInfoLy a{
+    color:#fff;
+   display:inline-block;
+  line-height:61px;
+    margin-left:11px;
+}
+/*顶部栏样式结束*/
+/*导航栏部分样式开始*/
+.bannerLy{
+    height:920px;
+    width: 100%;
+    background: url("../imgs/index-vip/bg.jpg")  no-repeat;
+    margin:0 auto;
+    background-position: center center;
+}
+.bannerLy  .shopLy{
+    height: 469px;
+    position: relative;
+    margin:0 auto;
+}
+.bannerLy  .shopLy .leftLy{
+    width: 35px;
+    height: 64px;
+    position: absolute;
+    left:-30px;
+    top:201px;
+    background-image: url("../imgs/index-vip/base_spr1.png");
+    background-position:-51px  0px;
+}
+.bannerLy  .shopLy .leftLy:hover{
+    background-position:0px  0px;
+}
+.bannerLy  .shopLy .rightLy{
+    width: 35px;
+    height: 64px;
+    position: absolute;
+   right:-30px;
+    top:158px;
+    background-image: url("../imgs/index-vip/base_spr1.png");
+    background-position:-100px  0px;
+}
+.bannerLy  .shopLy .rightLy:hover
+{
+    background-position:-151px  0px;
+}
+/*会员登录部分开始*/
+.bannerLy  .shopLy  .userLoginLy{
+    width: 243px;
+    height: 53px;
+    background-image: url("../imgs/index-vip/bg_base_spr24.png");
+    background-position: 0px  -100px;
+    position: absolute;
+    right:0px;
+    float:right;
+}
+.bannerLy  .shopLy   .ul1> li{
+    position: absolute;
+    display:none;
+}
+.bannerLy  .shopLy   .ul1>li:nth-child(1){
+    display:block;
+}
+.bannerLy  .shopLy   .ul1{
+    width: 1200px;
+    height: 540px;
+    display:block;
+    position:absolute;
+    top:-70px;
+}
+.bannerLy  .shopLy  .userLoginLy .loginLy{
+    display:block;
+    width: 110px;
+    height: 30px;
+    background-color:#ffc52a;
+    border-radius: 18px;
+    line-height:30px;
+    text-align: center;
+    color:#975500;
+    font-weight:700;
+    position:absolute ;
+    left:58px;
+    float:top;
+}
+.bannerLy  .shopLy  .picGuideLy {
+    width:660px;
+    height: 63px;
+    position: absolute;
+    top:406px;
+    left:323px;
+}
+
+.bannerLy  .shopLy  .picGuideLy i{
+    width: 94px;
+    height: 36px;
+    display:block;
+    line-height: 36px;
+    float:left;
+    color:#ffffff;
+    margin-right:9px;
+    text-align:center;
+    border-bottom:3px solid #991b24;
+}
+.bannerLy  .shopLy  .picGuideLy    .pic_colorLy{
+    background-color: rgba(255,255,255, 0.5);
+    border-bottom-color:  rgba(255,255,255, 0.5);
+}
+    /*中间导航栏部分样式开始*/
+.middleCutLy{
+    height: 390px;
+}
+.middleCutLy  .middleNav{
+    height: 376px;
+    background-color: white;
+}
+.middleCutLy  .middleNav   .bgcLy{
+    width: 240px;
+    height: 100px;
+    background-color:#ff464e;
+    float:left;
+    position: relative;
+}
+.middleCutLy  .middleNav   .liLy{
+    background-color:#ffffff;
+}
+.middleCutLy  .middleNav   li .moneyLy1{
+    width: 60px;
+    height: 59px;
+    display:inline-block;
+     background: url("../imgs/index-vip/icons_normal.png")  no-repeat -316px -112px;
+    position: absolute;
+    top:25px;
+    left:38px;
+    margin-top:19px;
+}
+
+.middleCutLy  .middleNav   li  .moneytit{
+    font-size:20px;
+    color:#ffffff;
+    position: absolute;
+    left:108px;
+    top:26px;
+}
+.middleCutLy  .middleNav   li  .txtColorLy{
+    color:#e41e27;
+}
+.middleCutLy  .middleNav   li  .moneytxt{
+    font-size:16px;
+    color:#ffffff;
+    position: absolute;
+    left:108px;
+    top:58px;
+}
+.middleCutLy  .middleNav   li  b{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display:block;
+    background:url("../imgs/index-vip/base_spr1.png")  no-repeat -149px -150px ;
+    position:absolute;
+    right:5px;
+}
+.middleCutLy  .middleNav   li em{
+    width: 23px;
+    height: 9px;
+    display:block;
+    background:url("../imgs/index-vip/base_spr1.png")  no-repeat -103px -206px ;
+    position:absolute;
+    right:7px;
+    top:7px;
+}
+.middleCutLy  .middleNav   li  .titColorLy{
+    color:#8ba8cf;
+}
+.middleCutLy  .middleNav   li  .titLy1{
+    background-position:-11px -15px  ;
+
+}
+.middleCutLy  .middleNav   li  .titLy2{
+    background-position:-218px -15px ;
+}
+.middleCutLy  .middleNav   li  .titLy3{
+    background-position:-513px -15px ;
+}
+.middleCutLy  .middleNav   li  .titLy4{
+    background-position:-610px -15px;
+}
+.middleCutLy  .middleNav   .titLy0:hover{
+    background-position: -316px -112px !important ;
+}
+.middleCutLy  .middleNav   .titLy1:hover{
+  background-position:-14px -112px   !important ;
+}
+.middleCutLy  .middleNav   .titLy2:hover{
+    background-position:-213px -112px  !important ;
+}
+.middleCutLy  .middleNav   .titLy3:hover{
+    background-position: -510px -112px  !important ;
+}
+.middleCutLy  .middleNav   .titLy4:hover{
+    background-position:  -611px -112px  !important  ;
+}
+.middleCutLy  .middleNav    .productLy{
+    padding-left:30px;
+    float:left;
+}
+.middleCutLy  .middleNav  .positionLy{
+margin-top:30px;
+    height: 230px;
+}
+.middleCutLy  .middleNav    .productLy .borderLy1:nth-child(1){
+    width: 230px;
+    height: 230px;
+    float:left;
+    margin-right:19px;
+    position: relative;
+    border:none;
+    background-color:#fff5d6;
+}
+.middleCutLy  .middleNav    .productLy  li>.p1Ly{
+    font-size:13px;
+    position: absolute;
+    left: 46px;
+    top:78px;
+}
+.middleCutLy  .middleNav    .productLy  li>.p11Ly{
+    font-size:13px;
+    position: absolute;
+    left: 65px;
+    top:96px;
+    color:#8b99ba;
+}
+.middleCutLy  .middleNav    .productLy  li .but1{
+    width: 148px;
+    height:41px;
+    background-color:#e41e27;
+    display:block;
+    border-radius: 20px;
+    position: absolute;
+    left:56px;
+    top:137px;
+    text-align:center;
+    line-height: 41px;
+}
+/****************这里为tab第一个少写的样式**********/
+/*****************************/
+.middleCutLy  .middleNav    .productLy  .productTitle{
+    display:none;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy1{
+    width: 273px;
+    height: 228px;
+    float:left;
+    margin-right:19px;
+    position: relative;
+    border:1px solid #ccc;
+}
+.middleCutLy  .middleNav    .productLy  .p2Ly{
+    font-size:22px;
+    color:#333333;
+    position: absolute;
+    left:17px;
+    top:47px;
+    display:block;
+}
+.middleCutLy  .middleNav    .productLy  .p21Ly{
+     font-size:14px;
+     color:#998ba8;
+     position: absolute;
+     left:17px;
+     top:82px;
+     display:block;
+ }
+.middleCutLy  .middleNav    .productLy  .p22Ly{
+    font-size:14px;
+    color:#998ba8;
+    position: absolute;
+    left:17px;
+    top:107px;
+    display:block;
+}
+.middleCutLy  .middleNav    .productLy .selectLy{
+    display:block;
+}
+.middleCutLy  .middleNav    .productLy .but2{
+    display:block;
+    font-size:16px;
+    color:#e63a85;
+    position: absolute;
+    top:160px;
+    left: 17px;
+}
+.middleCutLy  .middleNav    .productLy .piccLy1{
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    background: url("../imgs/index-vip/spr24_cashback.png") no-repeat  0px -18px;
+    top: 66px;
+    left:125px;
+}
+.middleCutLy  .middleNav    .productLy .piccLy2{
+     width: 123px;
+     height: 123px;
+     position: absolute;
+     background: url("../imgs/index-vip/spr24_cashback.png")   -126px -8px;
+     top: 66px;
+     left:125px;
+ }
+.middleCutLy  .middleNav    .productLy .piccLy3{
+    width: 123px;
+    height: 123px;
+    position: absolute;
+    background: url("../imgs/index-vip/spr24_cashback.png")   -252px -10px;
+    top: 66px;
+    left:125px;
+}
+/*******table栏2样式开始**************/
+.middleCutLy  .middleNav    .productLy  .borderLy2{
+    width: 240px;
+    height: 235px;
+    float:left;
+    position: relative;
+    margin-top:19px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2:nth-child(1){
+    width: 274px;
+    height: 254px;
+    background-color:#fff5d8;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy2{
+    width: 130px;
+    height: 130px;
+    background: url("../imgs/index-vip/base_spr1.png") no-repeat  -167px  -309px;
+    position: absolute;
+    left:71px;
+    top:38px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy21{
+    width: 160px;
+    height: 156px;
+    background: url("../imgs/index-vip/base_spr1.png") no-repeat  0px  -252px;
+    position: absolute;
+    left:54px;
+    top:11px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy211{
+    width: 33px;
+    height: 28px;
+    background: url("../imgs/index-vip/base_spr1.png") no-repeat  -164px  -269px;
+    position: absolute;
+    right:19px;
+    top:19px;
+    transform: rotate(0deg);
+    animation: rot 2s linear infinite;
+}
+@keyframes rot{
+    form{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tablebut21{
+    width: 148px;
+    height:41px;
+    background-color:#e41e27;
+    border-radius: 20px;
+    position: absolute;
+    left:56px;
+    top:175px;
+    text-align:center;
+    line-height: 41px;
+    font-size: 23px;
+    color:white;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tabletxtboLy2{
+    height: 14px;
+    color:#e43874;
+    font-size:14px;
+
+    position: absolute;
+    top:226px;
+
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tabletxtLy21{
+    width: 86px;
+    height: 14px;
+    display: inline-block;
+    border-right:1px solid red;
+    text-align:center;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tabletxtLy21:nth-child(3){
+    border-right:none;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2:nth-child(2){
+    width: 176px;
+    height: 226px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy221{
+    width: 34px;
+    height: 32px;
+    background:url("../imgs/index-vip/base_spr1.png")  -200px -200px ;
+    position: absolute;
+    top:29px;
+    left:93px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy222{
+    width: 135px;
+    height: 105px;
+    background:url("../imgs/index-vip/treasure_spr.png")  -14px -37px ;
+    position: absolute;
+    top:93px;
+    left:38px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy223{
+    color:#8b8b8b;
+   position: absolute;
+    left:86px;
+    top:225px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy224{
+    color:#8b8b8b;
+    position: absolute;
+    left:106px;
+    top:12px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy231{
+    width: 34px;
+    height: 32px;
+    background:url("../imgs/index-vip/base_spr1.png")  -200px -200px ;
+    position: absolute;
+    top:29px;
+    left:93px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy241{
+    width: 34px;
+    height: 32px;
+    background:url("../imgs/index-vip/base_spr1.png")  -200px -200px ;
+    position: absolute;
+    top:29px;
+    left:93px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy2222{
+    width: 135px;
+    height: 105px;
+    background:url("../imgs/index-vip/treasure_spr.png")  -175px -36px ;
+    position: absolute;
+    top:91px;
+    left:50px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy232{
+    width: 135px;
+    height: 105px;
+    background:url("../imgs/index-vip/treasure_spr.png")  -331px -40px ;
+    position: absolute;
+    top:91px;
+    left:38px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy242{
+    width: 135px;
+    height: 105px;
+    background:url("../imgs/index-vip/treasure_spr.png")  -490px -43px ;
+    position: absolute;
+    top:91px;
+    left:38px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy2212{
+    width: 34px;
+    height: 32px;
+    background:url("../imgs/index-vip/base_spr1.png")  -248px -199px ;
+    position: absolute;
+    top:29px;
+    left:93px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy231{
+    width: 34px;
+    height: 32px;
+    background:url("../imgs/index-vip/base_spr1.png")  -296px -199px ;
+    position: absolute;
+    top:29px;
+    left:93px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy2  .tableLy231{
+    width: 34px;
+    height: 32px;
+    background:url("../imgs/index-vip/base_spr1.png")  -346px -199px ;
+    position: absolute;
+    top:29px;
+    left:93px;
+}
+    /*******table栏2样式结束**************/
+    /*******table栏3样式开始**************/
+.middleCutLy  .middleNav    .productLy   .productLy2{
+    margin-top:19px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3{
+    width: 272px;
+    height: 230px;
+    float:left;
+    margin-right:19px;
+    border:1px solid #ccc;
+    position: relative;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3:nth-child(1){
+    width: 255px;
+    height: 230px;
+    background: url("../imgs/index-vip/bg_ticket.png");
+    border:none;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3   .gameLy31{
+    font-size:24px;
+    color:#e41e27;
+    text-align:center;
+    height: 54px;
+    line-height:54px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3   .gameLy32{
+    font-size:12px;
+    color:black;
+    text-align:center;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3 span{
+    color:red;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLybut34{
+    width: 145px;
+    height: 41px;
+    background-color: #e41e27;
+    display:block;
+    position: absolute;
+    top:93px;
+    left:56px;
+    border-radius: 20px;
+    text-align:center;
+    font-size:21px;
+    color:white;
+    line-height:41px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy33{
+    text-align:center;
+    position: absolute;
+    top:145px;
+    left:62px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy34{
+    position: absolute;
+    top:195px;
+    left:82px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy321{
+    width: 272px;
+    height: 113px;
+    background: url("../imgs/index-vip/11.jpg");
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy322{
+    height: 48px;
+    line-height:48px;
+    text-align:center;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy323{
+    width: 152px;
+    height: 48px;
+    background-color:#dddddd ;
+    border-radius: 24px;
+    position: absolute;
+    left:64px;
+    text-align:center;
+    line-height:48px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy331{
+    width: 272px;
+    height: 113px;
+    background: url("../imgs/index-vip/12.jpg");
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy332{
+    height: 48px;
+    line-height:48px;
+    text-align:center;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy333{
+    width: 152px;
+    height: 48px;
+    border: 1px solid #ea555c;
+    border-radius: 24px;
+    position: absolute;
+    left:64px;
+    text-align:center;
+    line-height:48px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy3  .gameLy341{
+    width: 272px;
+    height: 113px;
+    background: url("../imgs/index-vip/13.jpg");
+}
+    /*******table栏3样式结束**************/
+    /*******table栏4样式开始**************/
+.middleCutLy  .middleNav    .productLy   .productLy3{
+    margin-top:50px;
+}
+.middleCutLy  .middleNav    .productLy  .borderLy4{
+    width: 360px;
+    height: 190px;
+    float: left;
+    margin-right:30px;
+    background-color: #fff5d6;
+    position: relative;
+}
+.middleCutLy  .middleNav    .productLy .activeLy411{
+    width: 180px;
+    height: 170px;
+    background: url("../imgs/index-vip/a1.png");
+    position: absolute;
+    left:16px;
+    top:29px;
+}
+.middleCutLy  .middleNav    .productLy  .activeLy412{
+    font-size:14px;
+    position: absolute;
+   top:52px;
+    left:209px;
+}
+.middleCutLy  .middleNav    .productLy .borderLy4>.activeLy413{
+    font-size:12px;
+    color:#8b8b8b;
+    position: absolute;
+    top:81px;
+    left:209px;
+
+}
+.middleCutLy  .middleNav    .productLy  .activeLy414{
+    width: 103px;
+    height: 35px;
+    border:1px solid #e41e27;
+    text-align: center;
+    line-height:35px;
+    border-radius:17px;
+    position: absolute;
+    left:210px;
+    top:127px;
+}
+.middleCutLy  .middleNav    .productLy  .activeLy421{
+    width: 180px;
+    height: 170px;
+    background: url("../imgs/index-vip/a2.png");
+    position: absolute;
+    left:16px;
+    top:29px;
+}
+    /*******table栏4样式结束**************/
+    /*******table栏5样式开始**************/
+.middleCutLy  .middleNav    .productLy   .productLy4{
+    margin-top:30px;
+}
+.middleCutLy  .middleNav    .productLy .borderLy5{
+    width: 273px;
+    height: 229px;
+    float:left;
+    background-color:white;
+    margin-right:28px;
+    position: relative;
+    border: 1px solid #ccc;
+}
+.middleCutLy  .middleNav    .productLy .borderLy5:nth-child(1){
+    width: 231px;
+    background-color:#fff5d6;
+    border:none;
+}
+.middleCutLy  .middleNav    .productLy .futureLy411{
+    width: 104px;
+    height: 104px;
+    border-radius: 52px;
+    left: 64px;
+    top:53px;
+    position: absolute;
+    background: url("../imgs/index-vip/spr24_jinrong.png")  -125px 8px;
+    overflow: hidden;
+    transform: rotate(0deg);
+    animation: rot 2s linear infinite;
+    transform: rotate(0deg);
+}
+@keyframes rot{
+    form{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+.middleCutLy  .middleNav    .productLy .futureLy410{
+    font-size:20px;
+    width: 231px;
+    height: 54px;
+    text-align:center;
+    position: absolute;
+    line-height:54px;
+}
+.middleCutLy  .middleNav    .productLy .futureLy412{
+    width: 124px;
+    height: 40px;
+    position: absolute;
+    background-color: #e41e27;
+    left:50px;
+    top:173px;
+    border-radius: 20px;
+    text-align:center;
+    line-height: 40px;
+    color:white;
+}
+.middleCutLy  .middleNav    .productLy .futureLy420{
+    width: 120px;
+    height: 120px;
+    background: url("../imgs/index-vip/441.png");
+    background-size: 120px 120px;
+    position: absolute;
+    left:100px;
+    top:23px;
+}
+.middleCutLy  .middleNav    .productLy .futureLy421{
+     color:#383838;
+     position: absolute;
+     left:80px;
+     top:150px;
+ }
+.middleCutLy  .middleNav    .productLy .futureLy422{
+    color:#666666;
+    position: absolute;
+    left:100px;
+    top:172px;
+}
+.middleCutLy  .middleNav    .productLy .futureLy430{
+     width: 120px;
+     height: 120px;
+     background: url("../imgs/index-vip/442.jpg");
+     background-size: 120px 120px;
+     position: absolute;
+     left:100px;
+     top:23px;
+ }
+.middleCutLy  .middleNav    .productLy .futureLy440{
+    width: 120px;
+    height: 120px;
+    background: url("../imgs/index-vip/443.jpg");
+    background-size: 120px 120px;
+    position: absolute;
+    left:100px;
+    top:23px;
+}
+    /*******table栏5样式结束**************/
+    /*中间导航栏部分样式结束*/
+/*会员登录部分结束*/
+/*导航栏部分样式结束*/
+/*美女部分开始*/
+.lifeLy {
+    width:100%;
+    height: 992px;
+    margin:0 auto;
+    background:url("../imgs/index-vip/scn_01.jpg") no-repeat   center  center ;
+}
+.lifeLy  .textLy{
+    height: 992px;
+    position: relative;
+}
+.lifeLy  .textLy p{
+    font-size:52px;
+    color:#000000;
+    line-height:68px;
+    position: absolute;
+}
+.lifeLy  .textLy .rightTopLy{
+    right:70px;
+    top:242px;
+}
+.lifeLy  .textLy  .rightMiddleLy{
+    right:70px;
+    top:312px;
+}
+.lifeLy  .textLy  span{
+    display:block;
+     font-size:18px;
+    color:#8e8e8e;
+    line-height:26px;
+    position: absolute;
+
+}
+.lifeLy  .textLy .rightDownLy1{
+    right:70px;
+    top:402px;
+}
+.lifeLy  .textLy .rightDownLy2{
+    right:70px;
+    top:426px;
+}
+.lifeLy  .textLy .rightDownLy3{
+    display:block;
+    width: 170px;
+    height: 55px;
+    border:1px solid #e52c34;
+    border-radius: 27px;
+   position: absolute;
+    right:70px;
+    top:477px;
+    line-height: 55px;
+    text-align: center;
+    font-size:19px;
+    color:#e52c34;
+}
+.lifeLy  .textLy  .rightDownLy3:hover{
+    background-color:#e52c34 ;
+    color:#ffffff;
+}
+.lifeLy  .textLy ul{
+    position: absolute;
+    top:585px;
+    left:772px;
+}
+.lifeLy  .textLy  li{
+    height: 84px;
+    float:left;
+
+}
+.lifeLy  .textLy   li:nth-child(1){
+    width: 120px;
+    border-right:1px solid #d6d8da;
+}
+.lifeLy  .textLy   li:nth-child(2){
+    width: 121px;
+    border-right:1px solid #d6d8da;
+}
+.lifeLy  .textLy   li:nth-child(3){
+    width: 124px;
+}
+.lifeLy  .textLy   li:nth-child(1) i{
+    margin:0 auto;
+    width: 64px;
+    height: 84px;
+    display:block;
+    background-image: url("../imgs/index-vip/scn_spr.png");
+}
+.lifeLy  .textLy   li:nth-child(1):hover  i{
+    background-position: 0px  -100px;
+}
+.lifeLy  .textLy   li:nth-child(2) i{
+    margin:0 auto;
+    width: 64px;
+    height: 84px;
+    display:block;
+    background: url("../imgs/index-vip/scn_spr.png")  -99px  0px;
+}
+.lifeLy  .textLy   li:nth-child(2):hover  i{
+    background-position:-99px  -100px;
+}
+.lifeLy  .textLy   li:nth-child(3) i{
+    margin-left:28px;
+    width: 64px;
+    height: 84px;
+    display:block;
+    background: url("../imgs/index-vip/scn_spr.png") -195px  0px  no-repeat;
+}
+.lifeLy  .textLy   li:nth-child(3):hover  i{
+    background-position:-195px  -100px;
+}
+/*美女部分结束/
+/*电影美女部分样式开始*/
+.moiveLy{
+    width: 100%;
+    height:991px;
+    margin:0 auto;
+    background: url("../imgs/index-vip/scn_02.jpg") no-repeat  center center;
+}
+.moiveLy  .textLy{
+    height: 992px;
+    position: relative;
+}
+.moiveLy .textLy p{
+    font-size:52px;
+    color:#000000;
+    line-height:68px;
+    position: absolute;
+}
+.moiveLy .textLy .rightTopLy{
+    left:70px;
+    top:242px;
+}
+.moiveLy  .textLy  .rightMiddleLy{
+    left:70px;
+    top:312px;
+}
+.moiveLy .textLy  span{
+    display:block;
+    font-size:18px;
+    color:#8e8e8e;
+    line-height:26px;
+    position: absolute;
+
+}
+.moiveLy  .textLy .rightDownLy1{
+    left:70px;
+    top:402px;
+}
+.moiveLy .textLy .rightDownLy2{
+    left:70px;
+    top:426px;
+}
+.moiveLy .textLy .rightDownLy3{
+    display:block;
+    width: 170px;
+    height: 55px;
+    border:1px solid #e52c34;
+    border-radius: 27px;
+    position: absolute;
+    left:70px;
+    top:477px;
+    line-height: 55px;
+    text-align: center;
+    font-size:19px;
+    color:#e52c34;
+}
+.moiveLy .textLy  .rightDownLy3:hover{
+    background-color:#e52c34 ;
+    color:#ffffff;
+}
+.moiveLy  .textLy ul{
+    position: absolute;
+    top:585px;
+   right:772px;
+}
+.moiveLy .textLy  li{
+    height: 84px;
+    float:left;
+}
+.moiveLy .textLy   li:nth-child(1){
+    width: 93px;
+    border-right: 1px solid #d6d8da;
+}
+.moiveLy .textLy   li:nth-child(2){
+    margin:0 auto;
+    width: 121px;
+    border-right: 1px solid #d6d8da;
+}
+.moiveLy .textLy   li:nth-child(3){
+    width: 108px;
+}
+.moiveLy .textLy   li:nth-child(1) i{
+    width: 64px;
+    height: 84px;
+    display:block;
+    background: url("../imgs/index-vip/scn_spr.png")  0px -200px;
+}
+.moiveLy .textLy   li:nth-child(1):hover  i{
+    background-position: 0px  -300px;
+}
+.moiveLy  .textLy   li:nth-child(2) i{
+    margin:0 auto;
+    width: 64px;
+    height: 84px;
+    display:block;
+    background: url("../imgs/index-vip/scn_spr.png")  -99px   -200px  no-repeat;
+
+}
+.moiveLy  .textLy   li:nth-child(2):hover  i{
+    background-position:-99px  -300px;
+}
+.moiveLy  .textLy   li:nth-child(3) i{
+    margin-left:28px;
+    width: 64px;
+    height: 84px;
+    display:block;
+    background: url("../imgs/index-vip/scn_spr.png")   -200px  -200px  no-repeat;
+}
+.moiveLy    .textLy  li:nth-child(3):hover  i{
+    background-position: -200px  -300px;
+}
+/*电影美女部分样式结束*/
+/*帅哥部分样式开始*/
+.widthDieLy {
+    width: 100%;
+    height: 990px;
+    background: url("../imgs/index-vip/scn_03.jpg")  center center no-repeat;
+}
+.widthDieLy  .textLy{
+    height: 992px;
+    position: relative;
+}
+.widthDieLy .textLy p{
+    font-size:52px;
+    color:#000000;
+    line-height:68px;
+    position: absolute;
+}
+.widthDieLy  .textLy .rightTopLy{
+    right:70px;
+    top:242px;
+}
+.widthDieLy  .textLy  span{
+    display:block;
+    font-size:18px;
+    color:#8e8e8e;
+    line-height:26px;
+    position: absolute;
+
+}
+.widthDieLy .textLy .rightDownLy1{
+    right:70px;
+    top:332px;
+}
+.widthDieLy  .textLy .rightDownLy2{
+    right:70px;
+    top:359px;
+}
+.widthDieLy  .textLy .rightDownLy3{
+    display:block;
+    width: 170px;
+    height: 55px;
+    border:1px solid #e52c34;
+    border-radius: 27px;
+    position: absolute;
+    right:70px;
+    top:406px;
+    line-height: 55px;
+    text-align: center;
+    font-size:19px;
+    color:#e52c34;
+}
+.widthDieLy  .textLy  .rightDownLy3:hover{
+    background-color:#e52c34 ;
+    color:#ffffff;
+}
+.widthDieLy .textLy ul{
+    position: absolute;
+    top:515px;
+    left:760px;
+}
+.widthDieLy .textLy  li{
+    height: 84px;
+    float:left;
+}
+.widthDieLy  .textLy   li:nth-child(1){
+    width: 153px;
+border-right:1px solid #d6d8da;
+}
+.widthDieLy  .textLy   li:nth-child(2){
+    width: 137px;
+    border-right:1px solid #d6d8da;
+}
+.widthDieLy  .textLy   li:nth-child(3){
+    width: 137px;
+}
+.widthDieLy  .textLy   li:nth-child(1) i{
+    margin:0 auto;
+    width: 81px;
+    height: 84px;
+    display:block;
+    background:url("../imgs/index-vip/scn_spr.png") no-repeat   0px -400px;
+}
+.widthDieLy  .textLy   li:nth-child(1):hover  i{
+    background-position: 0px  -500px;
+}
+.widthDieLy .textLy   li:nth-child(2) i{
+    margin:0 auto;
+    width: 81px;
+    height: 84px;
+    display:block;
+    background: url("../imgs/index-vip/scn_spr.png") -200px  -400px no-repeat;
+}
+.widthDieLy  .textLy   li:nth-child(2):hover  i{
+    background-position:-200px  -500px;
+}
+.widthDieLy  .textLy   li:nth-child(3) i{
+    margin:0 auto;
+    width: 81px;
+    height: 84px;
+    display:block;
+    background: url("../imgs/index-vip/scn_spr.png")  -400px -400px  no-repeat;
+}
+.widthDieLy .textLy   li:nth-child(3):hover  i{
+    background-position:-400px  -500px;
+}
+/*帅哥部分样式结束*/
+/*底部样式开始*/
+.bottomLy{
+    height: 228px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px   dashed #ccc;
+}
+/*会员服务部分样式开始*/
+.bottomLy  .dl1{
+    display:inline-block;
+    width: 522px;
+    height: 136px;
+    margin-top:5px;
+    margin-left:33px;
+    float:left;
+}
+.bottomLy  .dl1 .dt1{
+    height: 71px;
+    font-size:19px;
+    line-height:71px;
+}
+.bottomLy  .dl1  .vipseveiceLy{
+    width: 462px;
+    height: 92px;
+
+}
+.bottomLy  .dl1  .vipseveiceLy i{
+    margin-right:12px;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    vertical-align: middle;
+
+}
+
+.bottomLy  .dl1 .vipseveiceLy  a{
+    width: 154px;
+    height: 20px;
+    display:inline-block;
+    font-size:14px;
+}
+.bottomLy  .dl1   .vipseveiceLy .linkLy1{
+    position: absolute;
+    left:33px;
+    top: 77px;
+}
+.bottomLy  .dl1  .vipseveiceLy .marketLy1{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -110px -37px;
+}
+
+.bottomLy  .dl1   .vipseveiceLy .linkLy2{
+    position: absolute;
+    left:192px;
+    top: 77px;
+}
+.bottomLy  .dl1  .vipseveiceLy .marketLy2{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -239px -36px;
+}
+
+.bottomLy  .dl1   .vipseveiceLy .linkLy3{
+    position: absolute;
+    left:33px;
+    top: 108px;
+}
+.bottomLy  .dl1  .vipseveiceLy .marketLy3{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -66px -36px;
+}
+.bottomLy  .dl1   .vipseveiceLy .linkLy4{
+    position: absolute;
+    left:192px;
+    top: 108px;
+}
+.bottomLy  .dl1  .vipseveiceLy .marketLy4{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -189px -36px;
+}
+.bottomLy  .dl1   .vipseveiceLy .linkLy5{
+    position: absolute;
+    left:33px;
+    top: 138px;
+}
+.bottomLy  .dl1  .vipseveiceLy .marketLy5{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -21px -36px;
+}
+
+.bottomLy  .dl1   .vipseveiceLy .linkLy6{
+    position: absolute;
+    left:192px;
+    top: 138px;
+}
+.bottomLy  .dl1  .vipseveiceLy .marketLy6{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -264px -36px;
+}
+/*会员服务部分样式结束*/
+/*会员专属客服部分开始*/
+.bottomLy  .dl2{
+    display:inline-block;
+    width: 369px;
+    height: 100px;
+    margin-top:5px;
+    float:left;
+}
+.bottomLy  .dl2 .dt2{
+   font-size:21px;
+    position: absolute;
+    top:31px;
+}
+.bottomLy  .dl2  .numLy{
+    font-size:21px;
+    color:#dc0909;
+    font-weight:600;
+    position: absolute;
+    top:78px;
+}
+.bottomLy  .dl2  .timeLy{
+    display:inline-block;
+    width: 94px;
+    height: 23px;
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat  -218px 0px;
+    position: absolute;
+    left:733px;
+    top:78px;
+}
+.bottomLy  .dl2 ul{
+    position: absolute;
+    left:556px;
+    top:112px;
+}
+.bottomLy  .dl2 li{
+    width: 97px;
+    height: 18px;
+    float:left;
+    text-align:center;
+}
+.bottomLy  .dl2 li:nth-child(1){
+    border-right:1px solid #ccc;
+}
+/*会员专属客服部分结束*/
+.bottomLy  .dl3{
+    width: 118px;
+    height: 113px;
+     float: left;
+}
+.bottomLy  .dl3 .dt3{
+    font-size:21px;
+    position: absolute;
+    top:31px;
+}
+.bottomLy  .dl3 .dd3 a{
+    width: 118px;
+    height: 18px;
+    display:block;
+    font-size:14px;
+}
+.bottomLy  .dl3   i{
+    width: 18px;
+    height: 18px;
+    display:inline-block;
+    vertical-align: middle;
+
+}
+.bottomLy  .dl3 .dd3  .linkLy2{
+  position: absolute;
+    left:923px;
+    top:79px;
+}
+.bottomLy  .dl3  .dd3 .marketLy31{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -19px 0px;
+}
+.bottomLy  .dl3 .dd3  .linkLy3{
+    position: absolute;
+    left:923px;
+    top:108px;
+}
+.bottomLy  .dl3  .dd3 .marketLy32{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -19px -19px;
+}
+.bottomLy  .dl3 .dd3  .linkLy4{
+    position: absolute;
+    left:923px;
+    top:138px;
+}
+.bottomLy  .dl3  .dd3 .marketLy34{
+    background:url("../imgs/index-vip/bg_basespr.png")  no-repeat -325px 0px;
+}
+/*底部样式结束*/
+/*底部导航栏开始*/
+.bottomNayLy{
+    height: 114px;
+    overflow: hidden;
+    position: relative;
+}
+.bottomNayLy  ul{
+    margin-top:30px;
+    margin-left:179px;
+    float:left;
+}
+.bottomNayLy  li{
+    width: 79px;
+    height: 16px;
+    float: left;
+    font-size:14px;
+    color:#ccc;
+}
+.bottomNayLy  li:nth-child(8){
+    border-right:1px solid #ccc;
+}
+.bottomNayLy p{
+    color:#ccc;
+    position: absolute;
+    top:30px;
+    left:819px;
+}
+
+
+/*底部导航栏结束*/

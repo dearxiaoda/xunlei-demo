@@ -1,0 +1,320 @@
+a,
+input,
+li,
+i,
+em,
+body,
+h1,
+h2,
+h3,
+h4,
+img,
+strong,
+span,
+b,
+div,
+ul,
+p{
+    margin:0;
+    padding:0;
+}
+body {
+    font: 12px/100% "微软雅黑";
+     height:100vh;
+}
+h1,h2,h3,h4 {
+    font-weight: normal;
+}
+i,em {
+    font-style: normal;
+}
+img {
+    border:0 none;
+    vertical-align: middle;
+}
+a {
+    text-decoration: none;
+}
+input {
+    border: none;
+    outline: 0 none;
+}
+li {
+    list-style: none;
+}
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.w {
+    margin: 0 auto;
+    width: 1100px;
+    /*width: 80%;*/
+    min-width: 200px;
+    max-width: 1600px;
+    /*这两个属性是控制父盒子的最大最小宽度*/
+    display: flex;
+    /*将显示模式修改为可弹性*/
+    flex-direction: row;
+    /*/!*主轴的默认方向是水平方向*!/*/
+    flex-direction: column;
+    /*/!*垂直方向*!/*/
+
+}
+#head {
+    width: 100%;
+    height: 70px;
+    background-color: #fafafa;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+}
+#body {
+    width: 100%;
+    height: 528px;
+    background-image: url("../imgs/video/bg1.jpg");
+    background-size:cover ;
+    /*padding-top: 195px;*/
+    overflow: hidden;
+    position: relative;
+}
+#bottom {
+    width: 100%;
+    height: 46px;
+    background-color: #1e58ab;
+    position: relative;
+    overflow: hidden;
+}
+/*找到音乐盒子*/
+audio {
+
+}
+#log {
+    width: 160px;
+    height: 46px;
+    background-image: url("../imgs/video/logo.png");
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+}
+.top{
+    position: relative;
+    height: 70px;
+}
+.top ul li{
+    float: right;
+    margin-left: 20px;
+    height: 34px;
+    padding-top: 32px;
+}
+/*给一个特殊的类名让鼠标移入显示li的上边框*/
+.top ul .borderTop {
+    border-top: 4px solid #2665cc;
+}
+.top ul li a {
+    font-size: 14px;
+    color: #666666;
+    height: 14px;
+    display: inline-block;
+}
+.top ul li:first-child{
+    margin-right: 50px;
+}
+.top .sina-ic {
+    width: 22px;
+    height: 20px;
+    background-image: url("../imgs/video/sp_png24.png");
+    background-position: -176px  -7px;
+    position: absolute;
+    right: 5px;
+    top: 26px;
+}
+.top .sina-ic:hover{
+    background-position: -176px -28px;
+}
+.zhutibody {
+    position: absolute;
+    height: 528px;
+    left: 50%;
+    transform: translateX(-50%);
+    /*bottom: 10%;*/
+    /*transform: translateY(-50%);*/
+    /*overflow: hidden;*/
+    /*bottom: 30px;*/
+}
+.zhutibody .chaoren {
+    width: 675px;
+    height: 405px;
+    background-image: url("../imgs/video/shadow_1.png");
+    position: absolute;
+    top: 40px;
+    left: -60px;
+}
+.zhutibody .chaoren img {
+    background-size: contain;
+}
+/*版本介绍*/
+.zhutibody .banbensm {
+    position: absolute;
+    left: 790px;
+    top: 77px;
+}
+/*版本号图片*/
+.zhutibody .banbensm .versionNumber{
+    width: 382px;
+    height: 120px;
+    background-image: url("../imgs/video/txt_png52.png");
+
+}
+/*版本大小图片*/
+.zhutibody .banbensm .versionsize ul{
+    margin-top: 40px;
+    /*background-image: url("../imgs/video/版本大小.png");*/
+}
+.zhutibody .banbensm .versionsize ul li {
+    color: #93b7ec;
+    float: left;
+    margin-right: 8px;
+}
+/*修复缺陷*/
+.xiufu {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    color: #93b7ec;
+}
+/*立即下载*/
+#xiazai {
+    position: absolute;
+    width: 126px;
+    height: 62px;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 62px;
+    padding-left: 80px;
+    background-image: url("../imgs/video/sp_png24.png");
+    background-position:0 -124px;
+    top: 250px;
+}
+/*找旧版的迅雷影音播放器*/
+.jiuban {
+    position: absolute;
+    top: 320px;
+    color: #c0d7f2;
+}
+/*旧版的点击按钮*/
+.jiuban a {
+    color: #c0d7f2;
+}
+.jiuban a:hover {
+    text-decoration: underline;
+}
+/*下载地址*/
+#body .more {
+    position: absolute;
+    left: 430px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /*width: 260px;*/
+    /*height: 14px;*/
+    /*/!*margin-top: 510px;*!/*/
+    /*margin: 510px auto;*/
+
+}
+.zhutibody .more span {
+    float: left;
+    margin-right: 8px;
+    color: #ffffff;
+}
+.zhutibody .more span a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*底部开始*/
+#bottom div {
+    margin-top: 6px;
+    text-align: center;
+    color: #5d94c9;
+}
+#lT {
+    width: 100%;
+    height: 530px;
+    /*background-color: red;*/
+    display: none;
+    position: relative;
+    background-image: url('../imgs/video/薰衣草.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#lT .spanList {
+    /*width: 1100px;*/
+    height: 100%;
+    position: relative;
+
+}
+#lT span img{
+    /*width: 450px;*/
+    height: 300px;
+    position: absolute;
+    background-size: cover;
+}
+#lT1 {
+    /*width: 450px;*/
+    /*height: 300px;*/
+    /*z-index: 5;*/
+    top:180px;
+    left: 458px;
+    opacity: 1;
+    border-radius: 10px;
+}
+#lT2  {
+    /*width: 400px;*/
+    /*height: 250px;*/
+
+    opacity: 0.8;
+    /*z-index: 4;*/
+    top: 150px;
+    left: 100px;
+    border-radius: 10px;
+}
+#lT3  {
+    /*width: 350px;*/
+    height: 200px;
+    opacity: 0.4;
+    /*z-index: 3;*/
+    top: 50px;
+    left:250px;
+    border-radius: 10px;
+}
+#lT4  {
+    /*width: 350px;*/
+    height: 200px;
+    opacity: 0.4;
+    /*z-index: 3;*/
+    top:50px;
+    left:700px;
+    border-radius: 10px;
+}
+#lT5 {
+    /*width: 400px;*/
+    height: 250px;
+    opacity: 0.8;
+    /*z-index: 4;*/
+    top:150px;
+    left: 820px;
+    border-radius: 10px;
+}
+
+
+
+
+
